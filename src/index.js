@@ -52,7 +52,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/search' element={<Search />} />
-        <Route path='/home' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/create' element={<Create />} />
         <Route path='/logout' element={<LogOut />} />
         <Route path='/createAcc' element={<Admin />} />
