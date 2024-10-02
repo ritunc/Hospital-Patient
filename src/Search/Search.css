@@ -1,0 +1,93 @@
+* {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        color:azure;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+        background-color: rgb(19, 47, 61);
+}
+header{
+        width: auto;
+        height:40px;
+        background-color: rgb(119, 169, 186);
+        /* background-color: rgb(119, 169, 186); */
+        padding-top: 10px;
+}
+.container{
+        margin-inline: 100px;
+}
+.contain{
+        display:flex;
+        justify-content: space-evenly;
+        margin-inline: 200px;
+}
+li{
+        list-style: none;
+        font-size:1.3rem;
+        cursor: pointer;
+}
+
+
+.menu{
+        border:1px solid azure;
+        display:flex;
+        justify-content: space-evenly;
+        border-top: none;
+        width: auto;
+        height:590px;
+        padding-top: 100px;
+}
+.forms{
+        border:1px solid azure;
+        display:flex;
+        flex-direction: column;
+        width:500px;
+        height:250px;
+}
+.label{
+        font-size:1.3rem;
+}
+.input{
+        border:1px solid azure;
+        width:300px;
+        height:35px;
+        border-radius:7px;
+        background-color: rgba(48, 39, 39, 0.2);
+        font-size: 1.2rem;
+}
+#btn{
+        border:1px solid azure;
+        width:300px;
+        height:35px;
+        border-radius:7px;
+        background-color: rgb(119, 169, 186);
+        font-size: 1.3rem;
+        border:none;
+}
+
+.formContains{
+        /* border:1px solid azure; */
+        width:400px;
+        height:36px;
+        
+        position: relative;
+        left:50px;
+        top:50px;
+        display:flex;
+        justify-content: space-evenly;
+        margin: 0px 0px 20px 0px;
+}
+.btnformContains{
+        /* border:1px solid azure; */
+        width:400px;
+        height:36px;
+        position: relative;
+        left:50px;
+        top:50px;
+        display:flex;
+        justify-content: space-between;
+        margin: 30px 0px 0px 0px;
+        padding-left:60px;
+}

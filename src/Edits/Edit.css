@@ -1,0 +1,203 @@
+* {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        color:azure;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body::-webkit-scrollbar{
+        display: none;
+}
+.sectionCreate{
+        background-color: rgb(19, 47, 61);
+        /* scroll-padding:10px; */
+        width:100vw;
+        height:764px;
+        display:flex;
+        flex-direction: column;
+}
+
+.Create-header{
+        border:1px solid azure;
+        width: 1280px;
+        height:40px;
+        background-color: rgb(119, 169, 186);
+        /* background-color: rgb(119, 169, 186); */
+        padding-top: 10px;
+        position: fixed;
+        z-index: 1;
+}
+.container{
+        margin-inline: 100px;
+}
+.contain{
+        display:flex;
+        justify-content: space-evenly;
+        margin-inline: 200px;
+}
+li{
+        list-style: none;
+        font-size:1.3rem;
+}
+
+
+
+
+
+.mainmenu{
+        border:1px solid azure;
+        display:flex;
+        flex-direction: column;
+        border-top: none;
+        width: 1280px;
+        height: 713px;
+        padding: 10px 5px 5px 5px;
+        position: relative;
+        top:50px;
+
+}
+
+#Create-formm{
+        border:1px solid azure;
+        display:flex;
+        flex-direction: column;
+        width:1270px;
+        height:699px;
+        padding:50px 10px 10px 10px;
+        /* overflow-x: hidden; */
+}
+
+.form-Container{
+        /* border:1px solid azure; */
+        display:flex;
+        justify-content: space-evenly;
+        width:auto;
+        height:50px;
+        margin-bottom: 70px;
+}
+.uniformContain{
+        /* border:1px solid azure; */
+        display:flex;
+        justify-content: space-evenly;
+        width:auto;
+        height:50px;
+        margin-bottom: 40px; 
+        padding-inline:150px; 
+}
+.uniform{
+        /* border:1px solid azure; */
+        display:flex;
+        justify-content: space-evenly;
+        width:auto;
+        height:100px;
+        padding-inline:50px; 
+}
+label{
+        font-size:1.3rem;
+}
+.data-input{
+        border:none;
+        border-bottom:2px solid azure;
+        width:330px;
+        height:35px;
+        border-radius:7px;
+        background-color: rgba(48, 39, 39, 0.2);
+        font-size: 1.2rem;
+        background: transparent;
+        outline: 0;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+}
+#img{
+        border-bottom: 0px;
+}
+#textarea{
+        border:none;
+        border-bottom:2px solid azure;
+        border-left:2px solid azure;
+        border-right:2px solid azure;
+        width:1000px;
+        height:70px;
+        background-color: rgba(48, 39, 39, 0.2);
+        font-size: 1.2rem;
+        background: transparent;
+        outline: 0;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+}
+
+/* #createAccount{
+        border:1px solid azure;
+        position:relative;
+        left:500px;
+        width: 150px;
+        height:30px;
+        border-radius:20px;
+        text-align: center;
+        padding-top:3px;
+        margin-bottom: 30px;
+}
+a{
+        font-size: 1.2rem;
+        text-decoration: none;
+} */
+.table_containers::-webkit-scrollbar{
+        display:none;
+}
+.table_containers{
+        border:1px solid azure;
+        width:auto;
+        height:200px;
+        padding: 10px 5px 5px 5px;
+        overflow-x:auto;
+        /* white-space: nowrap; */
+        max-width:100vw;
+}
+table{
+        border:1px solid azure;
+        /* display:block; */ 
+}
+tr{
+        border:1px solid azure;
+        
+}
+th,td{
+        border:1px solid azure;
+        padding:10px;
+}
+/* td{
+        padding:10px;
+
+} */
+.table-data{
+        width:70px;
+        height:30px;
+        border: none;
+        outline: none;
+        background-color: rgba(48, 39, 39, 0.2);
+        font-size: 1.2rem;
+        background: transparent;
+        outline: 0;
+}
+
+.buttonformContains{
+        /* border:1px solid azure; */
+        width:auto;
+        height:36px;
+        /* position: relative;
+        left:400px; 
+         top:50px; */
+        display:flex;
+        justify-content: center;
+        margin: 30px 0px 0px 0px;
+        padding-left:60px;
+}
+#button{
+        border:1px solid azure;
+        width:300px;
+        height:35px;
+        border-radius:7px;
+        background-color: rgb(119, 169, 186);
+        font-size: 1.3rem;
+        border:none;
+}
