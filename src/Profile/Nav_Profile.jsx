@@ -9,7 +9,7 @@ const NavProfile = ({NavItem}) => {
                              {NavItem.map((curElem, index) => {
                                 let code;
                                 return (
-                                        <li key={index}><Link to={`${window.location.origin}${curElem.link}`} state={{ from:`${window.location.origin}/profile/${undefined}`}}>{curElem.li}</Link></li>
+                                        <li key={index}><Link to={curElem.link} state={{ from:`/profile/${undefined}`}}>{curElem.li}</Link></li>
                                 )
                              })
 

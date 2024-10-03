@@ -10,7 +10,7 @@ const NavAdmin = () => {
                 <ul className='contain'>
                         {contect.UserData.map((curElem) => {
                                 return (
-                                        <li><Link to={`${window.location.origin}${curElem.link}`}>{curElem.li}</Link></li>
+                                        <li><Link to={curElem.link}>{curElem.li}</Link></li>
                                 )
                         })
                         

@@ -23,7 +23,7 @@ const ContextProvider = (props) => {
         useEffect( () => {
                 const searchDataValidation = () => {
 
-                                fetch(`${window.location.origin}/info/searchValid`, {
+                                fetch(`/info/searchValid`, {
                                         method:"get",
                                 })
                                 .then(response => response.json())

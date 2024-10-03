@@ -12,7 +12,7 @@ const Nav = () => {
                 <ul className='contain'>
                         {navLink.UserData.map((curElem, index) => {
                                 return (
-                                        <li key={index}><NavLink  to={`${window.location.origin}${curElem.link}`} state={{ from: `${window.location.origin}/search`}}>{curElem.li}</NavLink ></li>
+                                        <li key={index}><NavLink  to={curElem.link} state={{ from: `/search`}}>{curElem.li}</NavLink ></li>
                                 )
                         })
                         

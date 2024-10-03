@@ -22,7 +22,7 @@ const Create = () => {
 
                 const userCreateData = () => {
 
-                        fetch(`${window.location.origin}/info/userCreater`, {
+                        fetch(`/info/userCreater`, {
                                 method: "get",
                         })
                                 .then(response => response.json())
@@ -85,14 +85,14 @@ const Create = () => {
                 //http://localhost:5010
                 //http://localhost:5010
 
-                const res = await fetch(`${window.location.origin}/worker/userCreateImage`, { method: "POST", body: formData })
+                const res = await fetch(`/worker/userCreateImage`, { method: "POST", body: formData })
                 const data = await res.json();
                 console.log(data);
 
                 // .then(res => res.json())
                 // .then((data) => console.log(data));
 
-                const res2 = await fetch(`${window.location.origin}/worker/userCreate`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(worker) })
+                const res2 = await fetch(`/worker/userCreate`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(worker) })
                 const data2 = await res2.json()
                 //        console.log(data2);
                 alert(data2.message);

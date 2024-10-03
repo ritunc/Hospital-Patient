@@ -33,7 +33,7 @@ const Menu = () => {
                         alert("Please fill the form");
                 } else {
 
-                        fetch(`${window.location.origin}/user/login`, {
+                        fetch(`/user/login`, {
                                 method:"post",
                                 headers:{
                                         "Content-Type":"application/json",

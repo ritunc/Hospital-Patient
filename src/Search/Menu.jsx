@@ -20,7 +20,7 @@ const Menu = () => {
                                 <input type="text" value={navLink.code} onChange={(event) => navLink.setCode(event.target.value)} autoComplete='off' className='input'/>
                         </div>
                         <div className="btnformContains">
-                        <Link to={`${window.location.origin}/profile/${navLink.code}`}><button type="submit" onClick={navLink.cleanInputfield} id="btn">Search</button></Link>
+                        <Link to={`/profile/${navLink.code}`}><button type="submit" onClick={navLink.cleanInputfield} id="btn">Search</button></Link>
                         </div>
                 </form>
         </main>

@@ -36,7 +36,7 @@ const ContextProvider = (props) => {
 
                 // console.log("User",user);
 
-                fetch(`${window.location.origin}/user/signup`, {
+                fetch(`/user/signup`, {
                         method:"post",
                         headers:{
                                 'Accept':'application/json',

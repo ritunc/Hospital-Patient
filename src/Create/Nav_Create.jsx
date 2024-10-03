@@ -11,7 +11,7 @@ const NavCreate = ({NavItem}) => {
                                         <ul className='Contains'>
                                                 {NavItem.map((curElem, index) => {
                                                         return (
-                                                                <li key={index} className='Labels'><Link to={`${window.location.origin}${curElem.link}`} state={{ from: `${window.location.origin}/create`}}>{curElem.li}</Link></li>
+                                                                <li key={index} className='Labels'><Link to={curElem.link} state={{ from: `/create`}}>{curElem.li}</Link></li>
                                                         )
                                                 })
 

@@ -11,7 +11,7 @@ const Nav = ({NavItem}) => {
                 <ul className='ContaiN'>
                         {NavItem.map((curElem, index) => {
                                 return (
-                                        <li key={index} className='navITems'><Link to={`${window.location.origin}${curElem.link}`}>{curElem.li}</Link></li>
+                                        <li key={index} className='navITems'><Link to={curElem.link}>{curElem.li}</Link></li>
                                 )
                         })
                         

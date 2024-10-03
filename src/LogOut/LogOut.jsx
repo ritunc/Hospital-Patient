@@ -9,7 +9,7 @@ const LogOut = () => {
         // const navigate = useNavigate();
         useEffect(() => {
                 const logOut = async () => {
-                        const logOutresponse = await fetch(`${window.location.origin}/user/logOut`, {
+                        const logOutresponse = await fetch(`/user/logOut`, {
                                 method: "delete",
                         });
                         const data = await logOutresponse.json();
