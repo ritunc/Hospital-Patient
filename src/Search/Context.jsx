@@ -23,7 +23,7 @@ const ContextProvider = (props) => {
         useEffect( () => {
                 const searchDataValidation = () => {
 
-                                fetch(`https://hospital-backend-p4qh.vercel.app/info/searchValid`, {
+                                fetch(`https://hospital-backend-ecru.vercel.app/info/searchValid`, {
                                         method:"get",
                                 })
                                 .then(response => response.json())

@@ -118,7 +118,7 @@ const Profile = () => {
                         
                                 const workerDataFetch = async () => {
                                         try{
-                                                const res =  await fetch(`https://hospital-backend-p4qh.vercel.app/worker/workerData/${code}`, { method: "get", headers: { "Accept": "application/json", } })
+                                                const res =  await fetch(`https://hospital-backend-ecru.vercel.app/worker/workerData/${code}`, { method: "get", headers: { "Accept": "application/json", } })
                                                 const data = await res.json();
                                                 console.log("message:", data);
                  
@@ -164,7 +164,7 @@ const Profile = () => {
 
                         const searchDataValidation = () => {
 
-                                fetch(`https://hospital-backend-p4qh.vercel.app/info/handleWorkerValid`, {
+                                fetch(`https://hospital-backend-ecru.vercel.app/info/handleWorkerValid`, {
                                         method: "get",
                                 })
                                         .then(response => response.json())
@@ -190,7 +190,7 @@ const Profile = () => {
 
 
         const deleteEditData = () => {
-                fetch(`https://hospital-backend-p4qh.vercel.app/medDelete/DeleteWorker/${worker.hours}`, { method: "get" })
+                fetch(`https://hospital-backend-ecru.vercel.app/medDelete/DeleteWorker/${worker.hours}`, { method: "get" })
                         .then(res => res.json())
                         .then(data => console.log(data));
         }
@@ -238,13 +238,13 @@ const Profile = () => {
 
         const workerMedReport = async () => {
                 setState(false);        
-              const res = await fetch(`https://hospital-backend-p4qh.vercel.app/medReport/workerCreateMedreport`, { method: "post", headers: { "Content-type": "application/json" }, body: JSON.stringify(medreport) })
+              const res = await fetch(`https://hospital-backend-ecru.vercel.app/medReport/workerCreateMedreport`, { method: "post", headers: { "Content-type": "application/json" }, body: JSON.stringify(medreport) })
               const data = await res.json();
               alert(data.message);
                 
 
 
-                const res2 = await fetch(`https://hospital-backend-p4qh.vercel.app/worker/workerData/${code}`, { method: "get", headers: { "Accept": "application/json", } })
+                const res2 = await fetch(`https://hospital-backend-ecru.vercel.app/worker/workerData/${code}`, { method: "get", headers: { "Accept": "application/json", } })
                 const data2 = await res2.json();
                 if(data2){
                      setWorker(data2);    
@@ -286,7 +286,7 @@ const Profile = () => {
                                                 
                                                 <div className="profileform">
                                                 <div className="profile_image">
-                                                        <img src={`https://hospital-backend-p4qh.vercel.app/images/${worker.name}`} id="profileimg" alt="imageUser" />
+                                                        <img src={`https://hospital-backend-ecru.vercel.app/images/${worker.name}`} id="profileimg" alt="imageUser" />
                                                         {/* <img src={image} id="profileimg" alt="imageUser" /> */}
 
                                                 </div>

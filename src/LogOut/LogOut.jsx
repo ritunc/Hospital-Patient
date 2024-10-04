@@ -9,7 +9,7 @@ const LogOut = () => {
         // const navigate = useNavigate();
         useEffect(() => {
                 const logOut = async () => {
-                        const logOutresponse = await fetch(`https://hospital-backend-p4qh.vercel.app/user/logOut`, {
+                        const logOutresponse = await fetch(`https://hospital-backend-ecru.vercel.app/user/logOut`, {
                                 method: "delete",
                         });
                         const data = await logOutresponse.json();
