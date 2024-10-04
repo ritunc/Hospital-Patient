@@ -30,7 +30,7 @@ const ContextProvider = (props) => {
                                 .then(data => {
                                         if(data) {
                                                 console.log(data);
-                                                navigate('https://hospital-patient.vercel.app/');
+                                                navigate('/');
                                                 // alert(data.message);
                                         }
                                 })
