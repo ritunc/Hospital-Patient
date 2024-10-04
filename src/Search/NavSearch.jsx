@@ -12,7 +12,7 @@ const Nav = () => {
                 <ul className='contain'>
                         {navLink.UserData.map((curElem, index) => {
                                 return (
-                                        <li key={index}><NavLink  to={`https://hospital-backend-p4qh.vercel.app`+curElem.link} state={{ from: `/search`}}>{curElem.li}</NavLink ></li>
+                                        <li key={index}><NavLink  to={curElem.link} state={{ from: `/search`}}>{curElem.li}</NavLink ></li>
                                 )
                         })
                         
