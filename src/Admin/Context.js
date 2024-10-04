@@ -48,7 +48,7 @@ const ContextProvider = (props) => {
                         alert(data.message);
                         console.log(data.message);
                 });
-                navigate('/home');
+                navigate('/');
         }
 
 

@@ -129,7 +129,7 @@ const Profile = () => {
                  
                                                 if (data.message === "unothorised") {
                                                         console.log("nav:", data);
-                                                        navigate("/home");
+                                                        navigate("/");
                                                 }
                                                 setWorker(data);
                                         } catch(error){
@@ -171,7 +171,7 @@ const Profile = () => {
                                         .then(data => {
                                                 if (data) {
                                                         console.log(data);
-                                                        navigate('/home');
+                                                        navigate('/');
 
                                                 }
                                         })
