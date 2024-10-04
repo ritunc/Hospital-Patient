@@ -33,7 +33,7 @@ const Menu = () => {
                         alert("Please fill the form");
                 } else {
 
-                        fetch(`/user/login`, {
+                        fetch(`https://hospital-backend-p4qh.vercel.app/user/login`, {
                                 method:"post",
                                 headers:{
                                         "Content-Type":"application/json",
