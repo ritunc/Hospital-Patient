@@ -30,7 +30,7 @@ const ContextProvider = (props) => {
                                 .then(data => {
                                         if(data) {
                                                 console.log(data);
-                                                navigate('/home');
+                                                navigate('/');
                                                 // alert(data.message);
                                         }
                                 })
