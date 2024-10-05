@@ -43,6 +43,9 @@ const Menu = () => {
                         .then(res => res.json())
                         .then(data => {
                                 console.log(data);
+                                console.log(data.Uid);
+                                
+                                // document.cookie = data.Uid
                                 alert(data.message);
                         })
 
