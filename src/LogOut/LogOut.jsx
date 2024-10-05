@@ -18,7 +18,8 @@ const LogOut = () => {
                         
                         if(data){
                           console.log(data.message);
-                          window.location.href = from;
+                        //   window.location.href = from;
+                          window.location.href = '/';
                         }
                        
 
