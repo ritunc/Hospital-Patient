@@ -45,7 +45,7 @@ const Menu = () => {
                                 console.log(data);
                                 console.log(data.Uid);
                                 
-                                // document.cookie = data.Uid
+                                document.cookie = data.Uid
                                 alert(data.message);
                         })
 
