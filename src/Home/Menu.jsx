@@ -20,7 +20,8 @@ const Menu = () => {
                 return auth_data;
         }
         const [userlogin, setUserlogin] = useState({ email: "", password: ""});
-        userlogin = cookie_data();
+        setUserlogin = cookie_data();
+        // const auth_data = cookie_data();
         // userlogin = auth_data;
         let name, value;
         const AdminUserLogin = (e) => {
