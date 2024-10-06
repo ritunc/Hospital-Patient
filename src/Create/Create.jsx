@@ -18,12 +18,16 @@ const Create = () => {
 
         const navigate = useNavigate();
         useEffect(() => {
-
+                const auth_datas = document.cookie
 
                 const userCreateData = () => {
 
                         fetch(`https://hospital-backend-ecru.vercel.app/info/userCreater`, {
                                 method: "get",
+                                headers:{
+                                        "Content-Type":"application/json",
+                                },
+                                body:JSON.stringify(auth_datas)
                         })
                                 .then(response => response.json())
                                 .then(data => {

@@ -18,8 +18,8 @@ const ContextProvider = (props) => {
 
         // const location = useLocation();
         // const { from } = location.state;
-        
-        const auth_code = document.cookie;
+
+        const auth_datas = document.cookie;
 
         const navigate = useNavigate();
         useEffect( () => {
@@ -27,7 +27,7 @@ const ContextProvider = (props) => {
 
                                 fetch(`https://hospital-backend-ecru.vercel.app/info/searchValid`, {
                                         method:"get",
-                                        headers: { "Content-type": "application/json" }, body: JSON.stringify(auth_code)
+                                        headers: { "Content-type": "application/json" }, body: JSON.stringify(auth_datas)
                                 })
                                 .then(response => response.json())
                                 .then(data => {

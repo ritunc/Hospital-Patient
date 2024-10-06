@@ -116,12 +116,13 @@ const Profile = () => {
                 if (code !== 'undefined') {
 
                         //if request come from here->https://hospital-backend-ecru.vercel.app/profile/code
-                        
+
                         console.log("parameter if part:", code);
-                        
+                
+                        const auth_datas = document.cookie
                                 const workerDataFetch = async () => {
                                         try{
-                                                const res =  await fetch(`https://hospital-backend-ecru.vercel.app/worker/workerData/${code}`, { method: "get", headers: { "Accept": "application/json", } })
+                                                const res =  await fetch(`https://hospital-backend-ecru.vercel.app/worker/workerData/${code}`, { method: "get", headers: { "Content-type": "application/json" }, body:JSON.stringy(auth_datas) })
                                                 const data = await res.json();
                                                 console.log("message:", data);
                  
@@ -165,11 +166,12 @@ const Profile = () => {
                 } else {
                         //if request come from here->https://hospital-backend-ecru.vercel.app/profile
                         console.log("else-part");
-
+                      
                         const searchDataValidation = () => {
 
                                 fetch(`https://hospital-backend-ecru.vercel.app/info/handleWorkerValid`, {
                                         method: "get",
+                                        headers: { "Content-type": "application/json" }, body:JSON.stringy(auth_datas)
                                 })
                                         .then(response => response.json())
                                         .then(data => {
