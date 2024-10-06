@@ -34,7 +34,7 @@ const ContextProvider = (props) => {
                                         if(data) {
                                                 console.log(data);
                                                 navigate('/');
-                                                // alert(data.message);
+                                             
                                         }
                                 })
                         
