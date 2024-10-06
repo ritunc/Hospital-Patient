@@ -27,7 +27,7 @@ const Create = () => {
                                 headers:{
                                         "Content-Type":"application/json",
                                 },
-                                body:JSON.stringify(auth_datas)
+                                body:JSON.stringify([auth_datas])
                         })
                                 .then(response => response.json())
                                 .then(data => {
