@@ -9,6 +9,7 @@ const LogOut = () => {
         // const navigate = useNavigate();
         useEffect(() => {
                 const logOut = async () => {
+                        console.log("Entered Logout")
                         const auth_datas = document.cookie;
                         const logOutresponse = await fetch(`https://hospital-backend-ecru.vercel.app/user/logOut`, {
                                 method: "post",
