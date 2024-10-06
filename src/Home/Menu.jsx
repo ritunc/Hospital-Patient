@@ -16,6 +16,7 @@ const Menu = () => {
         const ref2 = useRef(null);
 
         const [userlogin, setUserlogin] = useState({ email: "", password: ""});
+        userlogin = auth_data;
         let name, value;
         const AdminUserLogin = (e) => {
                 name = e.target.name;
