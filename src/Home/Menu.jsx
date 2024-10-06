@@ -8,8 +8,7 @@ import { Link } from 'react-router-dom';
 console.log(MenuItem);
 
 const Menu = () => {
-        // const auth_data = document.cookie;
-        // console.log("auth_data:", auth_data);
+      
         
         const {h1, h2, h3, logIn, email, pass, createAcc} = MenuItem;
 
