@@ -114,6 +114,9 @@ const Profile = () => {
 
         useEffect(() => {
                 if (code !== 'undefined') {
+
+                        //if request come from here->https://hospital-backend-ecru.vercel.app/profile/code
+                        
                         console.log("parameter if part:", code);
                         
                                 const workerDataFetch = async () => {
@@ -160,6 +163,7 @@ const Profile = () => {
                       
                               
                 } else {
+                        //if request come from here->https://hospital-backend-ecru.vercel.app/profile
                         console.log("else-part");
 
                         const searchDataValidation = () => {
