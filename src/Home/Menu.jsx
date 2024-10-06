@@ -8,15 +8,12 @@ import { Link } from 'react-router-dom';
 console.log(MenuItem);
 
 const Menu = () => {
-        const auth_data = document.cookie;
-        console.log("auth_datasss:", auth_data);
         const {h1, h2, h3, logIn, email, pass, createAcc} = MenuItem;
 
         const ref1 = useRef(null);
         const ref2 = useRef(null);
 
         const [userlogin, setUserlogin] = useState({ email: "", password: ""});
-        userlogin = auth_data
         let name, value;
         const AdminUserLogin = (e) => {
                 name = e.target.name;
@@ -41,7 +38,7 @@ const Menu = () => {
                                 headers:{
                                         "Content-Type":"application/json",
                                 },
-                                body:JSON.stringify(userlogin, auth_data),
+                                body:JSON.stringify(userlogin),
                         })
                         .then(res => res.json())
                         .then(data => {
