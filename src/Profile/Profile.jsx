@@ -122,7 +122,7 @@ const Profile = () => {
                         const auth_datas = document.cookie
                                 const workerDataFetch = async () => {
                                         try{
-                                                const res =  await fetch(`https://hospital-backend-ecru.vercel.app/worker/workerData/${code}`, { method: "get", headers: { "Content-type": "application/json" }, body:JSON.stringy(auth_datas) })
+                                                const res =  await fetch(`https://hospital-backend-ecru.vercel.app/worker/workerData/${code}`, { method: "post", headers: { "Content-type": "application/json" }, body:JSON.stringy(auth_datas) })
                                                 const data = await res.json();
                                                 console.log("message:", data);
                  
@@ -171,7 +171,7 @@ const Profile = () => {
                                 const auth_datas = document.cookie;
 
                                 fetch(`https://hospital-backend-ecru.vercel.app/info/handleWorkerValid`, {
-                                        method: "get",
+                                        method: "post",
                                         headers: { "Content-type": "application/json" }, body:JSON.stringy(auth_datas)
                                 })
                                         .then(response => response.json())

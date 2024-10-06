@@ -26,7 +26,7 @@ const ContextProvider = (props) => {
                 const searchDataValidation = () => {
 
                                 fetch(`https://hospital-backend-ecru.vercel.app/info/searchValid`, {
-                                        method:"get",
+                                        method:"post",
                                         headers: { "Content-type": "application/json" }, body: JSON.stringify(auth_datas)
                                 })
                                 .then(response => response.json())

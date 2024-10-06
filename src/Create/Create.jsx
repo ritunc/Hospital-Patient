@@ -23,7 +23,7 @@ const Create = () => {
                 const userCreateData = () => {
 
                         fetch(`https://hospital-backend-ecru.vercel.app/info/userCreater`, {
-                                method: "get",
+                                method: "post",
                                 headers:{
                                         "Content-Type":"application/json",
                                 },
