@@ -168,6 +168,7 @@ const Profile = () => {
                         console.log("else-part");
                       
                         const searchDataValidation = () => {
+                                const auth_datas = document.cookie;
 
                                 fetch(`https://hospital-backend-ecru.vercel.app/info/handleWorkerValid`, {
                                         method: "get",
