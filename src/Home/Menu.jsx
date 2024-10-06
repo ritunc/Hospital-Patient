@@ -15,12 +15,12 @@ const Menu = () => {
         const cookie_data = () => {
                 console.log("we entered");
                 
-                const auth_data = document.cookie;
-                console.log("auth_datasss:", auth_data)
-                return auth_data;
+                const cooki_data = document.cookie;
+                console.log("auth_datasss:", cooki_data)
+                return cooki_data;
         }
         const [userlogin, setUserlogin] = useState({ email: "", password: ""});
-        setUserlogin = cookie_data();
+        const auth_data = cookie_data();
         // const auth_data = cookie_data();
         // userlogin = auth_data;
         let name, value;
@@ -47,7 +47,7 @@ const Menu = () => {
                                 headers:{
                                         "Content-Type":"application/json",
                                 },
-                                body:JSON.stringify(userlogin),
+                                body:JSON.stringify([userlogin, auth_data]),
                         })
                         .then(res => res.json())
                         .then(data => {
