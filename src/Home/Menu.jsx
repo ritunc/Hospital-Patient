@@ -12,9 +12,11 @@ const Menu = () => {
         
         const ref1 = useRef(null);
         const ref2 = useRef(null);
-        
-        const auth_data = document.cookie;
-        console.log("auth_datasss:", auth_data)
+        const cookie_data = () => {
+                const auth_data = document.cookie;
+                console.log("auth_datasss:", auth_data)
+        }
+        cookie_data();
         const [userlogin, setUserlogin] = useState({ email: "", password: ""});
         userlogin = auth_data;
         let name, value;
