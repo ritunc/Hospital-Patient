@@ -40,7 +40,7 @@ const Menu = () => {
                                 headers:{
                                         "Content-Type":"application/json",
                                 },
-                                body:JSON.stringify(userlogin, auth_data),
+                                body:JSON.stringify(userlogin),
                         })
                         .then(res => res.json())
                         .then(data => {
