@@ -172,7 +172,7 @@ const Profile = () => {
 
                                 fetch(`https://hospital-backend-ecru.vercel.app/info/handleWorkerValid`, {
                                         method: "post",
-                                        headers: { "Content-type": "application/json" }, body:JSON.stringy(auth_datas)
+                                        headers: { "Content-type": "application/json" }, body:JSON.stringy([auth_datas])
                                 })
                                         .then(response => response.json())
                                         .then(data => {
