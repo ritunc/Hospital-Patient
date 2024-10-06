@@ -17,9 +17,10 @@ const Menu = () => {
                 
                 const auth_data = document.cookie;
                 console.log("auth_datasss:", auth_data)
+                return auth_data;
         }
-        cookie_data();
         const [userlogin, setUserlogin] = useState({ email: "", password: ""});
+        userlogin = cookie_data();
         // userlogin = auth_data;
         let name, value;
         const AdminUserLogin = (e) => {
