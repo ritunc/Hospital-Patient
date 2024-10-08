@@ -440,9 +440,9 @@ a{
         .navITems{
                 font-size: 1rem;
         }
-        body{
-                /* width:425px; */
-        }
+        /* body{
+                width:425px;
+        } */
         .Text{
                 left:20px;
         }
@@ -560,14 +560,34 @@ a{
                 font-size: 1.6rem;
         }
 }
-@media (width <= 284px){
+@media (width <= 286px){
         .imgContainer{
                 width:250px;
-                margin-left: 15px;
+                margin-left: 17px;
         }
         .LogIn{
                 width:250px;
-                margin-left: 15px;
+                margin-left: 17px;
+        }
+        .FormContain{
+                width:310px;
+                left:20px;
+        }
+        .Text{
+                font-size: 1.2rem;
+        }
+        #admins{
+                font-size: 1.6rem;
+        }
+}
+@media (width <= 274px){
+        .imgContainer{
+                width:250px;
+                margin-left: 12px;
+        }
+        .LogIn{
+                width:250px;
+                margin-left: 12px;
         }
         .FormContain{
                 width:310px;
