@@ -9,6 +9,8 @@ export const useContect = () => {
 };
 
 
+const URL = process.env.URL || window.location.origin;
+
 const ContextProvider = (props) => {
         const navigate = useNavigate()
 
@@ -36,7 +38,7 @@ const ContextProvider = (props) => {
 
                 // console.log("User",user);
 
-                fetch(`https://hospital-backend-ecru.vercel.app/user/signup`, {
+                fetch(`https://hospital-backend-ibkd.vercel.app/user/signup`, {
                         method:"post",
                         headers:{
                                 'Accept':'application/json',
