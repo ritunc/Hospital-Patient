@@ -12,7 +12,7 @@ const LogOut = () => {
                 const logOut = async () => {
                         console.log("Entered Logout")
                         const auth_datas = document.cookie;
-                        const logOutresponse = await fetch(`https://hospital-backend-ibkd.vercel.app/user/logOut`, {
+                        const logOutresponse = await fetch(`https://hospital-backend-ibkd-one.vercel.app/user/logOut`, {
                                 method: "post",
                                 headers: { "Content-type": "application/json" }, body:JSON.stringify([auth_datas])
                         });

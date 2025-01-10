@@ -38,7 +38,7 @@ const ContextProvider = (props) => {
 
                 // console.log("User",user);
 
-                fetch(`https://hospital-backend-ibkd.vercel.app/user/signup`, {
+                fetch(`https://hospital-backend-ibkd-one.vercel.app/user/signup`, {
                         method:"post",
                         headers:{
                                 'Accept':'application/json',

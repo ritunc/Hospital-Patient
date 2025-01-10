@@ -43,7 +43,7 @@ const Menu = () => {
                         alert("Please fill the form");
                 } else {
 
-                        fetch(`https://hospital-backend-ibkd.vercel.app/user/login`, {
+                        fetch(`https://hospital-backend-ibkd-one.vercel.app/user/login`, {
                                 method:"post",
                                 headers:{
                                         "Content-Type":"application/json",
