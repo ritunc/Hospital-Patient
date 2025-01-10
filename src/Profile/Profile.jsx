@@ -8,6 +8,7 @@ import { collapse } from '../Create/Create';
 
 
 
+const URL = process.env.URL || window.location.origin;
 
 const UserData = Data.map((curElem) => {
         return curElem;
@@ -119,12 +120,15 @@ const Profile = () => {
 
                         console.log("parameter if part:", code);
                 
-                        const auth_datas = document.cookie
-                                const workerDataFetch = async () => {
-                                        try{
-                                                const res =  await fetch(`https://hospital-backend-ecru.vercel.app/worker/workerData/${code}`, { method: "post", headers: { "Content-type": "application/json" }, body:JSON.stringy(auth_datas) })
-                                                const data = await res.json();
-                                                console.log("message:", data);
+                        const auth_datas = document.cookie;
+                        
+                        const workerDataFetch = async () => {
+                                try{
+                                        console.log("auth_datas::",auth_datas);
+                                        const res =  await fetch(`${window.location.origin}/worker/workerData/${code}`, { method: "post", headers: { "Content-type": "application/json" }, body:JSON.stringify([auth_datas]) })
+                                        const data = await res.json();
+                                        setWorker(data);
+                                        console.log("message:", data);
                  
                                                 if (data.message === "undefined") {
                                                         alert("Date is not present");
@@ -135,10 +139,11 @@ const Profile = () => {
                                                         console.log("nav:", data);
                                                         navigate("/");
                                                 }
-                                                setWorker(data);
-                                        } catch(error){
+                                               
+                                                
+                                } catch(error){
                                                 throw new Error("Somthing went wrong!!!");
-                                        }
+                                }
                                        
                                         // fetch(`/worker/workerData/${code}`, { method: "get", headers: { "Accept": "application/json", } })
                                         //  .then(res => res.json())
@@ -157,8 +162,9 @@ const Profile = () => {
                                         //         setWorker(data);
                                                 
                                         //  });
-                                }
-                                workerDataFetch();
+                                
+                        }
+                        workerDataFetch();
 
                        
                       
@@ -170,9 +176,9 @@ const Profile = () => {
                         const searchDataValidation = () => {
                                 const auth_datas = document.cookie;
 
-                                fetch(`https://hospital-backend-ecru.vercel.app/info/handleWorkerValid`, {
+                                fetch(`${URL}/info/handleWorkerValid`, {
                                         method: "post",
-                                        headers: { "Content-type": "application/json" }, body:JSON.stringy([auth_datas])
+                                        headers: { "Content-type": "application/json" }, body:JSON.stringyfy([auth_datas])
                                 })
                                         .then(response => response.json())
                                         .then(data => {
@@ -197,7 +203,7 @@ const Profile = () => {
 
 
         const deleteEditData = () => {
-                fetch(`https://hospital-backend-ecru.vercel.app/medDelete/DeleteWorker/${worker.hours}`, { method: "get" })
+                fetch(`${URL}/medDelete/DeleteWorker/${worker.hours}`, { method: "get" })
                         .then(res => res.json())
                         .then(data => console.log(data));
         }
@@ -245,13 +251,13 @@ const Profile = () => {
 
         const workerMedReport = async () => {
                 setState(false);        
-              const res = await fetch(`https://hospital-backend-ecru.vercel.app/medReport/workerCreateMedreport`, { method: "post", headers: { "Content-type": "application/json" }, body: JSON.stringify(medreport) })
+              const res = await fetch(`${URL}/medReport/workerCreateMedreport`, { method: "post", headers: { "Content-type": "application/json" }, body: JSON.stringify(medreport) })
               const data = await res.json();
               alert(data.message);
                 
 
 
-                const res2 = await fetch(`https://hospital-backend-ecru.vercel.app/worker/workerData/${code}`, { method: "get", headers: { "Accept": "application/json", } })
+                const res2 = await fetch(`${URL}/worker/workerData/${code}`, { method: "get", headers: { "Accept": "application/json", } })
                 const data2 = await res2.json();
                 if(data2){
                      setWorker(data2);    
@@ -259,6 +265,7 @@ const Profile = () => {
                         code: "", Dates: "", hours: "", b_p: "", h_p: "", Pulse: "", Temp: "", Suger_Level: "", Complain: "", Paracetamol: "", Avil: "", Cetrizine: "",
                         Decolic: "", Asthalin: "", Neurobion_F: "", Primulate_N: "", Lasilactone: "", Trenexamic: "", Remark: "",
                      });    
+
                 }
 
 
@@ -291,9 +298,10 @@ const Profile = () => {
                                 <main className="profilemain">
                                       
                                                 
-                                                <div className="profileform">
+                                        <div className="profileform">
                                                 <div className="profile_image">
-                                                        <img src={`https://hospital-backend-ecru.vercel.app/images/${worker.name}`} id="profileimg" alt="imageUser" />
+                                                        <img src={`${URL}/uploads/images/${worker.name}`} id="profileimg" alt="imageUser" />
+                                                        {/* {        console.log("imagesss::",`${URL}/uploads/images/${worker.name}`)} */}
                                                         {/* <img src={image} id="profileimg" alt="imageUser" /> */}
 
                                                 </div>

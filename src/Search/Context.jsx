@@ -9,10 +9,8 @@ export const useNavLink = () => {   //custome Hook
         return Link;
 }
 
-
-
-
-
+/*URL Hit*/
+const URL = process.env.URL || window.location.origin;
 
 const ContextProvider = (props) => {
 
@@ -25,7 +23,7 @@ const ContextProvider = (props) => {
         useEffect( () => {
                 const searchDataValidation = () => {
 
-                                fetch(`https://hospital-backend-ecru.vercel.app/info/searchValid`, {
+                                fetch(`${URL}/info/searchValid`, {
                                         method:"post",
                                         headers: { "Content-type": "application/json" }, body: JSON.stringify([auth_datas])
                                 })

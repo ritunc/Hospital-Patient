@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 // const UserMenu = MenuItem.map((curElem) => {
 //         return (curElem);
 // });
+const URL = process.env.URL || window.location.origin;
 console.log(MenuItem);
 
 const Menu = () => {
@@ -42,7 +43,7 @@ const Menu = () => {
                         alert("Please fill the form");
                 } else {
 
-                        fetch(`https://hospital-backend-ecru.vercel.app/user/login`, {
+                        fetch(`${URL}/user/login`, {
                                 method:"post",
                                 headers:{
                                         "Content-Type":"application/json",

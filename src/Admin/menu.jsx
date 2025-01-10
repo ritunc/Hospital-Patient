@@ -12,9 +12,9 @@ const Menu = () => {
                 <>
                 <main className='adminMain'>
                 <div className="adminimgContainer">
-                        <h1 class="text">Welcome to Med Stack</h1>
-                        <h2 class="text">Share your Info</h2>
-                        <h3 class="text">Protect Info</h3>
+                        <h1 className="text">Welcome to Med Stack</h1>
+                        <h2 className="text">Share your Info</h2>
+                        <h3 className="text">Protect Info</h3>
                 </div>
                 <div className="logIn">
                         <h1 id="admin">Admin</h1>

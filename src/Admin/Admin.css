@@ -5,9 +5,16 @@
         color:azure;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-body{
+/* body{
         background-color: rgb(19, 47, 61);
-}
+} */
+
+/* Its not needed, body color is decleard at index.html page,body color
+need all the pages only in home.css */
+/* #Admin-body_color{ 
+        background-color: rgb(19, 47, 61);
+} */
+
 header{
         width: auto;
         height:40px;
@@ -31,6 +38,7 @@ li{
 
 
 .adminMain{
+        border:1px solid azure;
         display:flex;
         justify-content: space-evenly;
         border-top: none;
@@ -43,11 +51,15 @@ li{
         width:600px;
         height:400px;
         text-align:left;
+        border-radius: 12px;
+        background-color: rgb(19, 47, 61);
 }
 .logIn{
         border:1px solid azure;
         width:500px;
-        height:500px;
+        height:400px;
+        background-color: rgb(19, 47, 61);
+        border-radius: 12px;
 }
 .text{
         position:relative;
@@ -75,7 +87,7 @@ form{
 }
 
 .formContain{
-        /* border:1px solid azure; */
+        border:1px solid azure;
         width:400px;
         height:36px;
         
@@ -98,7 +110,7 @@ label{
         font-size: 1.2rem;
 }
 #btn{
-        /* border:1px solid azure; */
+        border:1px solid azure;
         width:300px;
         height:35px;
         border-radius:7px;
@@ -107,7 +119,7 @@ label{
         border:none;
 }
 .btnformContain{
-        /* border:1px solid azure; */
+        border:1px solid azure;
         width:400px;
         height:36px;
         position: relative;
@@ -117,4 +129,119 @@ label{
         justify-content: space-between;
         margin: 30px 0px 0px 0px;
         padding-left:60px;
+}
+
+@media (width<= 1024px) {
+     .adminimgContainer{
+        width:500px;
+     }
+     .logIn{
+        width:450px;
+     }
+     .adminInput{
+        width:250px;
+    }
+    .formContain{
+        justify-content:space-evenly;
+        left:30px;
+}
+}
+@media (width<=920px){
+        .text{
+                font-size: 2.1rem;
+                left:23px;
+        }
+        .adminimgContainer{
+                width:400px;
+        }
+}
+
+/*Tablet --- 1st*/
+@media (width<=768px) {
+        .formContain{
+                width:350px;
+                justify-content:space-between;
+        }
+        .adminMain{
+                justify-content: space-between;
+                width:810px;
+        }
+        header{
+                width:810px;
+        }
+        form{
+                height:300px;
+        }
+        .btnformContain{
+                left:10px;
+                top:30px;
+                width:390px;
+                padding-left: 50px;
+        }
+        .formContain{
+                left:30px;
+        }
+        .logIn{
+                width:410px;
+        }
+}
+@media (width<=688px){
+        .adminMain{
+                flex-direction: column;
+                justify-content: space-evenly;
+                height:890px;
+                align-items: center;
+        }
+        .logIn{
+                width:400px;
+        }
+        .btnformContain{
+                width: 370px;
+                padding-left: 50px;
+        }
+        #btn{
+                width:280px;
+        }
+}
+
+
+/*Mobile -- 1st*/
+@media (width <= 426px){
+        .adminMain{
+                height:960px;
+        }
+        
+}
+@media (width <= 379px){
+        .adminMain{
+                height:1080px;
+        }
+
+}
+@media (width <= 337px){
+        .adminMain{
+                height:1210px;
+        }
+}
+@media (width <= 321px){
+        .adminMain{
+                height:1270px;
+        }
+}
+@media (width <= 285px){
+        .adminMain{
+                height:1440px;
+        }
+        .adminimgContainer{
+                width:450px;
+        }
+        .logIn{
+                width:450px;
+        }
+        .btnformContain{
+                left:40px;
+        }
+        .formContain{
+                left:40px;
+        }
 }

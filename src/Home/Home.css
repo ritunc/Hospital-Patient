@@ -5,22 +5,23 @@
         color:azure;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-body{
-        background-color: rgb(19, 47, 61);
+.Home-body_color{
+        /* background-color: rgb(19, 47, 61); */
+        background-color: black;
 }
 header{
         width: 1244px;
         height:40px;
-        background-color: rgb(119, 169, 186);
+        /* background-color: rgb(119, 169, 186); */
         /* background-color: rgb(119, 169, 186); */
         padding-top: 10px;
 }
 .Container{
-        border: 1px solid azure;
+        /* border: 1px solid azure; */
         margin-inline: 100px;
 }
 .ContaiN{
-        border: 1px solid azure;
+        /* border: 1px solid azure; */
         display:flex;
         justify-content: space-evenly;
         margin-inline: 200px;
@@ -42,21 +43,69 @@ li{
         height:590px;
         padding-top: 30px;
 }
+
+
+@keyframes spin {
+        0%{
+                transform: rotate(0deg);
+        }
+        100%{
+                transform: rotate(360deg);
+        }
+}
 .imgContainer{
-        border:1px solid azure;
+        /* border:3px solid azure; */
+        position: relative;
+        /* border-right:3px solid rgb(16, 144, 144);
+        border-top:3px solid #ce14ce; */
+        background-color: rgb(19, 47, 61);
         width:600px;
         height:400px;
         text-align:left;
+        border-radius: 12px;
+        overflow: hidden;
 }
+.imgContainer::before{
+        content: '';
+        position: absolute;
+        top:150px;
+        width:600px;
+        height:200px;
+        background:linear-gradient( rgb(16, 144, 144), #ce14ce);
+        border-radius: 12px;
+        animation-name:rotate;  
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+}
+.imgContainer::after{
+        content: '';
+        position: absolute;
+        background:rgb(19, 47, 61);
+        inset:5px;
+}
+@keyframes rotate {
+        from{
+                transform: rotate(0deg);
+        }
+        to{
+                transform: rotate(360deg);
+        }
+        
+}
+
 .LogIn{
         border:1px solid azure;
+        background-color: rgb(19, 47, 61);
         width:500px;
         height:500px;
+        border-radius: 12px;
 }
 .Text{
         position:relative;
         top:100px;
         left:50px;
+        z-index: 2;
         font-size: 2.5rem;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -71,7 +120,7 @@ li{
         text-align: center;
 }
 .home-form{
-        border:1px solid azure;
+        /* border:1px solid azure; */
         display:flex;
         flex-direction: column;
         width:auto;
@@ -79,7 +128,7 @@ li{
 }
 
 .FormContains{
-        border:1px solid azure;
+        /* border:1px solid azure; */
         width:400px;
         height:36px;
         
@@ -111,7 +160,7 @@ label{
         border:none;
 }
 .btnFormContain{
-        border:1px solid azure;
+        /* border:1px solid azure; */
         width:400px;
         height:36px;
         position: relative;
@@ -253,7 +302,10 @@ a{
                 top:30px;
         }
 }
-@media (width <= 769px){
+
+
+/*Tablet ---1st*/
+@media (width <= 768px){
         .btnFormContain{
                 width: 290px;
                 padding-left: 30px;
@@ -277,6 +329,11 @@ a{
         .LogIn{
                 margin-right:10px;
         }
+        .main{
+                width:810px;
+                height:600px;
+                padding-top:50px;
+        }
 }
 @media (width <= 753px){
         .Container{
@@ -293,14 +350,19 @@ a{
 }
 @media ( width <= 691px){
         .main{
-                display: flex;
+                /* display: flex;
                 flex-direction: column;
         
-                height:900px;
+                height:900px; */
+
+                flex-direction: column;
+                justify-content: space-evenly;
+                height:890px;
+                align-items: center;
         }
         .imgContainer{
                 width:590px;
-                margin-left: 50px;
+                /* margin-left: 50px; */
         }
         .Text{
                 font-size: 2.5rem;
@@ -312,7 +374,7 @@ a{
                 margin-left: 50px;
                 width:380px;
                 height:400px;
-                margin-left: 150px;
+                /* margin-left: 150px; */
         }
         .FormContains{
                 width:310px;
@@ -422,7 +484,7 @@ a{
 }
 @media (width <= 426px){
         .imgContainer{
-                margin-left:40px;
+                margin-left:30px;
                 width:350px;
         }
         .LogIn{
@@ -446,22 +508,29 @@ a{
         .Text{
                 left:20px;
         }
+        .main{
+                height: 945px;
+        }
+        .imgContainer{
+                height:350px;
+        }
 }
 @media (width <= 380px){
         .imgContainer{
-                width:300px;
+                width:380px;
+                height:390px;
         }
         .LogIn{
                 margin-left: 40px;
-                width:300px;
+                width:370px;
         }
         .FormContains{
-                width:270px; 
-                left:15px;
+                width:300px; 
+                left:40px;
                 height:30px;
         }
         .LogInputs{
-                width: 170px;
+                width: 190px;
                 height:30px;
         }
         .LABALS{
@@ -469,13 +538,14 @@ a{
 
         }
         .Text{
-                font-size: 1.5rem;
+                font-size: 2rem;
         }
 
         .btnFormContain{
                 width: 260px;
                 padding-left: 30px;
-                height:31px
+                height:31px;
+                left:60px;
         }
         #btns{
                 width:200px;
@@ -483,11 +553,14 @@ a{
                 font-size: 1.3rem;
         }
         #createAccount{
-                left:75px;
+                left:105px;
                 top:30px;
         }
         #admins{
                 font-size: 2rem;
+        }
+        .main{
+                height:1080px;
         }
 }
 @media (width <= 336px){
@@ -550,7 +623,8 @@ a{
         .btnFormContain{
                 width: 210px;
                 padding-left: 20px;
-                height:26px
+                height:26px;
+                left: 20px;
         }
         #btns{
                 width:200px;
@@ -558,6 +632,9 @@ a{
         }
         #admins{
                 font-size: 1.6rem;
+        }
+        .main{
+                height:1300px;
         }
 }
 @media (width <= 286px){

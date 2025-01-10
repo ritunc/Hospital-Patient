@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom';
 
+const URL = process.env.URL || window.location.origin;
 const LogOut = () => {
 
         const location = useLocation();
@@ -11,7 +12,7 @@ const LogOut = () => {
                 const logOut = async () => {
                         console.log("Entered Logout")
                         const auth_datas = document.cookie;
-                        const logOutresponse = await fetch(`https://hospital-backend-ecru.vercel.app/user/logOut`, {
+                        const logOutresponse = await fetch(`${URL}/user/logOut`, {
                                 method: "post",
                                 headers: { "Content-type": "application/json" }, body:JSON.stringify([auth_datas])
                         });

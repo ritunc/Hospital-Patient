@@ -9,7 +9,7 @@ body::-webkit-scrollbar{
         display:none;
 }
 .sectionProfile{
-        background-color: rgb(19, 47, 61);
+        /* background-color: rgb(19, 47, 61); */
         width:100vw;
         height:764px;
         display:flex;
@@ -72,13 +72,14 @@ li{
         border-bottom:none;
 }
 .profile_image{
-        border:1px solid azure;
+        /* border:1px solid azure; */
         margin: 0px 10px 10px 0px;
         overflow: hidden;
 }
 #profileimg{
         border:1px solid azure;
         width:290px;
+        /* border-radius:6px; */
 }
 .profile_info_1{
         border:1px solid azure;

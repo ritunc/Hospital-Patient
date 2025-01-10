@@ -8,11 +8,11 @@
 body::-webkit-scrollbar{
         display: none;
 }
-.SectionCreate{
-        background-color: rgb(19, 47, 61);
+.section_Create{
+        /* background-color: rgb(19, 47, 61); */
         /* scroll-padding:10px; */
-        width:100vw;
-        height:764px;
+        width:1280px;
+        height:864px;
         display:flex;
         flex-direction: column;
 }
@@ -49,17 +49,16 @@ li{
 
 
 
-.mainMenu{
+.main_Menu{
         border:1px solid azure;
         display:flex;
         flex-direction: column;
         border-top: none;
         width: 1280px;
-        height: 713px;
+        height: 853px;
         padding: 10px 5px 5px 5px;
         position: relative;
         top:50px;
-
 }
 
 #Create-Formm{
@@ -67,15 +66,18 @@ li{
         /* display:flex; */
         /* flex-direction: column; */
         width:1270px;
-        height:400px;
+        height:700px;
         padding:50px 10px 10px 10px;
         /* overflow-x: hidden; */
         
         display: grid;
-        column-gap: 40px;
+        justify-content: center;
+        column-gap: 10px;
         row-gap: 40px;
-        grid-template-columns: 400px 420px 350px;
-        grid-template-rows: 50px 50px 50px 50px;
+        grid-template-columns: 400px 420px;
+        grid-template-rows: 50px 50px 50px 50px 50px 50px;
+        background-color: rgb(19, 47, 61);
+        border-radius: 12px;
 }
 
 /*first row---*/
@@ -97,6 +99,7 @@ li{
         border-bottom-right-radius: 0px;
         margin-left: 10px;
 }
+
 /*second row---*/
 .secondrow{
         /* border:1px solid azure; */
@@ -162,7 +165,7 @@ li{
 .thirdrow_data-input{
         border:none;
         border-bottom:2px solid azure;
-        width:250px;
+        width:240px;
         height:35px;
         border-radius:7px;
         background-color: rgba(48, 39, 39, 0.2);
@@ -199,6 +202,12 @@ li{
 
 #img{
         border-bottom: 0px;
+        border:1px solid azure;
+         width:300px;
+          height:200px; 
+          position:relative; 
+          left:10px; 
+          bottom:10px; 
 }
 #familyInfo{
         position: relative;
@@ -300,27 +309,80 @@ th,td{
         font-size: 1.3rem;
         border:none;
 }
+#Capture_Button{
+        background-color: transparent;
+        border:1px solid azure;
+        width:100px;
+        height:30px;
+        margin-left:10px;
+        border-radius: 8px;
+}
+#image_capture_container{
+        z-index: 5;
+}
+#video{
+        background: transparent;
+}
+#button_capture{
+        border:1px solid azure;
+        width:200px;
+        height:35px;
+        border-radius:7px;
+        background-color: transparent;
+        font-size: 1.3rem;
+        /* border:none; */
+
+        position:relative;
+         left:200px;
+          bottom:350px;
+          margin-top:10px;
+}
+#Web_Cam{
+        border: 1px solid azure;
+         position:relative;
+        left:0px;
+         bottom:350px;
+        right:100px;
+         border-radius:8px; 
+}
+
 
 @media (width <= 1024px){
-        .SectionCreate{
-                height:500px;
-        }
-        .mainMenu{
-          height:600px;
+        /* .section_Create{
+                height:900px;
+        } */
+        .main_Menu{
+          /* height:1000px; */
+          width:1280px;
         }
       #Create-Formm{
-        height:600px;
+        height:800px;
+        width:1270px;
+      }
+      .first-Data-Input{
+        width:230px;
+      }
+      .second-Data-Input{
+        width:200px;
+     }
+      .thirdrow_data-input{
+        width:240px;
       }
 }
 @media (width <= 920px){
-        .mainMenu{
+        .main_Menu{
                 height:700px;
+                /* width:950px; */
         }
-        .SectionCreate{
+        .section_Create{
                 height:600px;
         } 
         #Create-Formm{
           height:600px;
+          grid-template-columns: 350px 370px;
+        }
+        .first-Data-Input{
+                width:200px;
         }
 }
 @media (width <= 769px){
@@ -328,10 +390,13 @@ th,td{
                 grid-template-columns: 460px 440px;
                 grid-template-rows: 70px 70px 70px 70px 70px 70px;
                 height:800px;
-                padding-left: 190px;
+                /* padding-left: 190px; */
+                width:1270px;
+                /* justify-content: center; */
         }
-        .mainMenu{
-                height: 850px;
+        .main_Menu{
+                width:1280px;
+                height: 895px;
         }
         .Label{
                 font-size: 1.8rem;
@@ -348,12 +413,12 @@ th,td{
         #Create-Formm{
                 grid-template-columns: 480px 460px;
                 grid-template-rows: 70px 70px 70px 70px 70px 70px;
-                height:880px;
-                padding-left: 160px;
+                height:980px;
+                /* padding-left: 160px; */
                 padding-top: 140px;
         }
-        .mainMenu{
-                height: 930px;
+        .main_Menu{
+                height: 1000px;
                 top:65px;
         }
         .Label{
@@ -374,7 +439,7 @@ th,td{
                 padding-left: 140px;
                 padding-top: 140px;
         }
-        .mainMenu{
+        .main_Menu{
                 height: 1100px;
                 top:70px;
         }
@@ -418,7 +483,7 @@ th,td{
                 height:1080px;
                 padding-left: 80px;
         }
-        .mainMenu{
+        .main_Menu{
                 height: 1300px;
                 top:70px;
         }
@@ -448,7 +513,7 @@ th,td{
                 height:1280px;
                 padding-left: 80px;
         }
-        .mainMenu{
+        .main_Menu{
                 height: 1300px;
                 top:75px;
         }
@@ -469,7 +534,7 @@ th,td{
                 height:1380px;
                 padding-left: 55px;
         }
-        .mainMenu{
+        .main_Menu{
                 height: 1500px;
                 top:75px;
         }
@@ -492,10 +557,10 @@ th,td{
                 grid-template-columns: 700px;
                 row-gap: 60px;
                 height:1790px;
-                padding-left: 310px;
+                /* padding-left: 310px; */
                 padding-top: 100px;
         }
-        .mainMenu{
+        .main_Menu{
                 height: 1930px;
                 top:75px;
         }
@@ -518,16 +583,35 @@ th,td{
                 width:390px;
                 height:80px;
         }
+        #Web_Cam{
+                bottom: 1000px;
+        }
+        #button_capture{
+                bottom: 1000px;
+        }
+        #label_capture{
+                position: relative;
+                bottom: 200px;
+        }
+        #Capture_Button{
+                position: relative;
+                bottom: 200px;
+        }
+        #img{
+                left:50px;
+                bottom:0px;
+        }
+
 }
 @media (width <= 334px){
         #Create-Formm{
                 grid-template-columns: 700px;
                 row-gap: 60px;
                 height:1900px;
-                padding-left: 310px;
+                /* padding-left: 310px; */
                 padding-top: 100px;
         }
-        .mainMenu{
+        .main_Menu{
                 height: 1960px;
                 top:75px;
         }
@@ -537,25 +621,32 @@ th,td{
                 grid-template-columns: 700px;
                 row-gap: 60px;
                 height:2000px;
-                padding-left: 310px;
+                /* padding-left: 310px; */
                 padding-top: 100px;
         }
-        .mainMenu{
+        .main_Menu{
                 height: 2000px;
                 top:75px;
         }
 }
-/* @media (width <= 285px){
+@media (width <= 285px){
         #Create-Formm{
                 grid-template-columns: 700px;
                 row-gap: 60px;
                 height:2000px;
-                padding-left: 310px;
+                /* padding-left: 310px; */
                 padding-top: 100px;
+                width:1135px;
         }
-        .mainMenu{
-                width: 1000px;
+        .main_Menu{
+                width: 1135px;
                 height: 2000px;
                 top:75px;
         }
-} */
+        .Create-Header{
+                width:1135px;
+        }
+        .section_Create{
+                width:1135px;
+        }
+}

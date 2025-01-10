@@ -5,9 +5,9 @@
         color:azure;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-body{
+/* body{
         background-color: rgb(19, 47, 61);
-}
+} */
 header{
         width: auto;
         height:40px;
@@ -45,6 +45,8 @@ li{
         flex-direction: column;
         width:500px;
         height:250px;
+        background-color: rgb(19, 47, 61);
+        border-radius: 12px;
 }
 .label{
         font-size:1.3rem;
@@ -90,4 +92,45 @@ li{
         justify-content: space-between;
         margin: 30px 0px 0px 0px;
         padding-left:60px;
+}
+
+@media (width <= 769px){
+        .menu{
+                width:810px;
+        }
+        .forms{
+                width:450px;
+        }
+        .input{
+                width:250px;
+        }
+        .formContains{
+                left:25px;
+        }
+        .btnformContains{
+                left:25px;
+        }
+}
+
+@media (width <= 426px){
+        .menu{
+                height:945px;
+                padding-top: 200px;
+        }
+        
+}
+@media (width <= 378px){
+        .menu{
+                height:1090px;
+        }
+}
+@media (width <= 336px){
+        .menu{
+                height:1210px;
+        }
+}
+@media (width <= 321px){
+        .menu{
+                height:1440px;
+        }
 }
