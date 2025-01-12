@@ -477,10 +477,6 @@ a{
         }  
 }
 @media (width <= 459px){
-        body {
-                width: 100vw;
-                overflow: hidden;
-        }
         .imgContainer{
                 margin-left:40px;
         }
@@ -489,10 +485,6 @@ a{
         }  
 }
 @media (width <= 426px){
-        body {
-                width: 100vw;
-                overflow: hidden;
-        }
         .imgContainer{
                 margin-left:30px;
                 width:350px;
@@ -526,10 +518,7 @@ a{
         }
 }
 @media (width <= 380px){
-        body {
-                width: 100vw;
-                overflow: hidden;
-        }
+       
         .imgContainer{
                 width:380px;
                 height:390px;
