@@ -516,6 +516,10 @@ a{
         }
 }
 @media (width <= 380px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .imgContainer{
                 width:380px;
                 height:390px;
@@ -564,6 +568,10 @@ a{
         }
 }
 @media (width <= 336px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .imgContainer{
                 width:270px;
                 margin-left: 35px;
@@ -608,6 +616,10 @@ a{
         }
 }
 @media (width <= 321px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .imgContainer{
                 width:270px;
                 margin-left: 26px;
@@ -638,6 +650,10 @@ a{
         }
 }
 @media (width <= 286px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .imgContainer{
                 width:250px;
                 margin-left: 17px;
@@ -658,6 +674,10 @@ a{
         }
 }
 @media (width <= 274px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .imgContainer{
                 width:250px;
                 margin-left: 12px;
