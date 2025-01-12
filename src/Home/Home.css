@@ -187,10 +187,6 @@ a{
 }
 
 @media (width <= 1096px){
-        body {
-                width: 100vw;
-                overflow: hidden;
-        }
         .LogIn{
                 width:450px;
                 height:400px;
@@ -225,10 +221,6 @@ a{
 }
 
 @media (width <= 956px ){
-        body {
-                width: 100vw;
-                overflow: hidden;
-        }
         .imgContainer{
                 width:400px;
         }
@@ -247,10 +239,7 @@ a{
         }
 }
 @media (width <= 919px){
-        body {
-                width: 100vw;
-                overflow: hidden;
-        }
+     
         .imgContainer{
                 width:380px;
               
@@ -268,10 +257,7 @@ a{
         }
 }
 @media (width <= 886px) {
-        body {
-                width: 100vw;
-                overflow: hidden;
-        }
+    
         .imgContainer{
                 width:400px;
         }
@@ -289,10 +275,6 @@ a{
 }
 
 @media (width <= 801px){
-        body {
-                width: 100vw;
-                overflow: hidden;
-        }
         .imgContainer{
                 width:340px;
         }
