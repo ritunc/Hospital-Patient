@@ -187,6 +187,10 @@ a{
 }
 
 @media (width <= 1096px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .LogIn{
                 width:450px;
                 height:400px;
@@ -221,6 +225,10 @@ a{
 }
 
 @media (width <= 956px ){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .imgContainer{
                 width:400px;
         }
@@ -239,6 +247,10 @@ a{
         }
 }
 @media (width <= 919px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .imgContainer{
                 width:380px;
               
@@ -256,6 +268,10 @@ a{
         }
 }
 @media (width <= 886px) {
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .imgContainer{
                 width:400px;
         }
@@ -273,6 +289,10 @@ a{
 }
 
 @media (width <= 801px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .imgContainer{
                 width:340px;
         }
@@ -306,6 +326,10 @@ a{
 
 /*Tablet ---1st*/
 @media (width <= 768px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .btnFormContain{
                 width: 290px;
                 padding-left: 30px;
@@ -336,6 +360,10 @@ a{
         }
 }
 @media (width <= 753px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .Container{
                 margin-inline:0px;
                 display: flex;
@@ -349,6 +377,10 @@ a{
         }
 }
 @media ( width <= 691px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .main{
                 /* display: flex;
                 flex-direction: column;
@@ -395,6 +427,10 @@ a{
         }
 }
 @media (width <= 667px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .imgContainer{
                 width:530px;
                 margin-left: 70px;
@@ -405,6 +441,10 @@ a{
         }
 }
 @media ( width <= 652px ){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .imgContainer{
                 width:550px;
                 height: 300px;
@@ -475,6 +515,10 @@ a{
         }  
 }
 @media (width <= 459px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .imgContainer{
                 margin-left:40px;
         }
@@ -483,6 +527,10 @@ a{
         }  
 }
 @media (width <= 426px){
+        body {
+                width: 100vw;
+                overflow: hidden;
+        }
         .imgContainer{
                 margin-left:30px;
                 width:350px;
