@@ -308,10 +308,6 @@ a{
 
 /*Tablet ---1st*/
 @media (width <= 768px){
-        body {
-                width: 100vw;
-                overflow: hidden;
-        }
         .btnFormContain{
                 width: 290px;
                 padding-left: 30px;
@@ -342,10 +338,6 @@ a{
         }
 }
 @media (width <= 753px){
-        body {
-                width: 100vw;
-                overflow: hidden;
-        }
         .Container{
                 margin-inline:0px;
                 display: flex;
@@ -359,10 +351,6 @@ a{
         }
 }
 @media ( width <= 691px){
-        body {
-                width: 100vw;
-                overflow: hidden;
-        }
         .main{
                 /* display: flex;
                 flex-direction: column;
@@ -409,10 +397,6 @@ a{
         }
 }
 @media (width <= 667px){
-        body {
-                width: 100vw;
-                overflow: hidden;
-        }
         .imgContainer{
                 width:530px;
                 margin-left: 70px;
@@ -423,10 +407,6 @@ a{
         }
 }
 @media ( width <= 652px ){
-        body {
-                width: 100vw;
-                overflow: hidden;
-        }
         .imgContainer{
                 width:550px;
                 height: 300px;
