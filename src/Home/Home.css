@@ -700,14 +700,14 @@ a{
                 font-size: 1.6rem;
         }
 }
-@media (width <= 426px){
+/* @media (width <= 426px){
         .FormContain{
                 width:310px;
                 left:20px;
         }
-}
+} */
 
-@media (width <= 1024px) {
+/* @media (width <= 1024px) {
         .LogIn{
                 width:400px;
                 height:400px;
@@ -741,4 +741,4 @@ a{
                 left:170px;
                 top:30px;
         }
-}
+} */
