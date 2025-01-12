@@ -9,7 +9,7 @@
         /* background-color: rgb(19, 47, 61); */
         background-color: black;
 }
-header{
+#home-hader{
         width: 1244px;
         height:40px;
         /* background-color: rgb(119, 169, 186); */
@@ -139,7 +139,7 @@ li{
         justify-content: space-between;
         margin: 0px 0px 20px 0px;
 }
-label{
+.LABALS{
         font-size:1.3rem;
 }
 .LogInputs{
@@ -434,7 +434,7 @@ a{
         
 }
 @media ( width <= 642px){
-        header{
+        #home-hader{
                 width:642px;
         }
         .imgContainer{
@@ -579,14 +579,36 @@ a{
                 height:1080px;
         }
 }
-
+/*vivo YO2 phone*/
 @media (width <= 355px){
+        #home-hader{
+                width:354px;
+                height: 35px;
+        }
         .main{
-                width:500px;
+                width:354px;
         }
         .imgContainer{
-                width:500px;
+                width:300px;
+                margin-left: 6px;
+        }
+        .LogIn{
+                width:300px;
                 margin-left: 10px;
+        }
+        .LogInputs{
+                margin-left: 0px;
+        }
+        .FormContains{
+                left:10px;
+                justify-content: space-between;
+                width:280px;
+        }
+        .btnFormContain{
+                left:20px;
+        }
+        #createAccount{
+                left:80px;
         }
 
 }

@@ -6,7 +6,7 @@ const Nav = ({NavItem}) => {
 
   return (
   <>
-     <header>
+     <header id="home-hader">
         <div className='Container'>
                 <ul className='ContaiN'>
                         {NavItem.map((curElem, index) => {
