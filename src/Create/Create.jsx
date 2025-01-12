@@ -168,8 +168,8 @@ const Create = () => {
 
         //Not use function
         const videoConstraints = {
-                width: 1280,
-                height: 1820,
+                // width: 1280,
+                // height: 1820,
                 facingMode: "user"
         };
          
@@ -310,7 +310,7 @@ const Create = () => {
                                                                                 ref={webcamRef}
                                                                                 screenshotFormat="image/jpeg"
                                                                                 width="400px"
-                                                                                // videoConstraints={videoConstraints}
+                                                                                videoConstraints={videoConstraints}
                                                                         />
                                                                         <button id="button_capture" style={{}} onClick={capture}>Capture photo</button>
 
