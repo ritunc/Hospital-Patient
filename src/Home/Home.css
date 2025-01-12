@@ -579,6 +579,17 @@ a{
                 height:1080px;
         }
 }
+
+@media (width <= 355px){
+        .main{
+                width:500px;
+        }
+        .imgContainer{
+                width:500px;
+                margin-left: 10px;
+        }
+
+}
 @media (width <= 336px){
      
         .imgContainer{
