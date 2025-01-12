@@ -170,7 +170,7 @@ const Create = () => {
         const videoConstraints = {
                 // width: 1280,
                 // height: 1820,
-                facingMode: "user"
+                facingMode: 'environment',
         };
          
 
