@@ -3,6 +3,7 @@
         padding: 0px;
         box-sizing: border-box;
         color:azure;
+        overflow-x: hidden;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .Home-body_color{
@@ -184,6 +185,18 @@ label{
 }
 a{
         text-decoration: none;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+        body {
+          font-size: 14px;
+          margin: 0;
+          padding: 0;
+        }
 }
 
 @media (width <= 1096px){
