@@ -763,14 +763,14 @@ a {
 
 
 /*vivo YO2 phone*/
-@media (width <=358px) {
+@media (width <=355px) {
         #home-hader {
-                width: 357px;
+                width: 354px;
                 height: 35px;
         }
 
         .main {
-                width: 357px;
+                width: 353px;
         }
 
         .imgContainer {
