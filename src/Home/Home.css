@@ -2,187 +2,206 @@
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
-        color:azure;
+        color: azure;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.Home-body_color{
+
+.Home-body_color {
         /* background-color: rgb(19, 47, 61); */
         background-color: black;
 }
-#home-hader{
+
+#home-hader {
         width: 1244px;
-        height:40px;
+        height: 40px;
         /* background-color: rgb(119, 169, 186); */
         /* background-color: rgb(119, 169, 186); */
         padding-top: 10px;
 }
-.Container{
+
+.Container {
         /* border: 1px solid azure; */
         margin-inline: 100px;
 }
-.ContaiN{
+
+.ContaiN {
         /* border: 1px solid azure; */
-        display:flex;
+        display: flex;
         justify-content: space-evenly;
         margin-inline: 200px;
 }
-li{
+
+li {
         /* border: 1px solid azure; */
         list-style: none;
-        font-size:1.3rem;
+        font-size: 1.3rem;
         cursor: pointer;
 }
 
 
-.main{
-        border:1px solid azure;
-        display:flex;
+.main {
+        border: 1px solid azure;
+        display: flex;
         justify-content: space-evenly;
         border-top: none;
         width: auto;
-        height:590px;
+        height: 590px;
         padding-top: 30px;
 }
 
 
 @keyframes spin {
-        0%{
+        0% {
                 transform: rotate(0deg);
         }
-        100%{
+
+        100% {
                 transform: rotate(360deg);
         }
 }
-.imgContainer{
+
+.imgContainer {
         /* border:3px solid azure; */
         position: relative;
         /* border-right:3px solid rgb(16, 144, 144);
         border-top:3px solid #ce14ce; */
         background-color: rgb(19, 47, 61);
-        width:600px;
-        height:400px;
-        text-align:left;
+        width: 600px;
+        height: 400px;
+        text-align: left;
         border-radius: 12px;
         overflow: hidden;
 }
-.imgContainer::before{
+
+.imgContainer::before {
         content: '';
         position: absolute;
-        top:150px;
-        width:600px;
-        height:200px;
-        background:linear-gradient( rgb(16, 144, 144), #ce14ce);
+        top: 150px;
+        width: 600px;
+        height: 200px;
+        background: linear-gradient(rgb(16, 144, 144), #ce14ce);
         border-radius: 12px;
-        animation-name:rotate;  
+        animation-name: rotate;
         animation-duration: 4s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
 }
-.imgContainer::after{
+
+.imgContainer::after {
         content: '';
         position: absolute;
-        background:rgb(19, 47, 61);
-        inset:5px;
+        background: rgb(19, 47, 61);
+        inset: 5px;
 }
+
 @keyframes rotate {
-        from{
+        from {
                 transform: rotate(0deg);
         }
-        to{
+
+        to {
                 transform: rotate(360deg);
         }
-        
+
 }
 
-.LogIn{
-        border:1px solid azure;
+.LogIn {
+        border: 1px solid azure;
         background-color: rgb(19, 47, 61);
-        width:500px;
-        height:500px;
+        width: 500px;
+        height: 500px;
         border-radius: 12px;
 }
-.Text{
-        position:relative;
-        top:100px;
-        left:50px;
+
+.Texts {
+        position: relative;
+        top: 100px;
+        left: 50px;
         z-index: 2;
         font-size: 2.5rem;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
 
-#admins{
-        position:relative;
-        top:10px;
+#admins {
+        position: relative;
+        top: 10px;
         font-size: 2.5rem;
         margin-bottom: 30px;
         text-align: center;
 }
-.home-form{
+
+.home-form {
         /* border:1px solid azure; */
-        display:flex;
+        display: flex;
         flex-direction: column;
-        width:auto;
-        height:250px;
+        width: auto;
+        height: 250px;
 }
 
-.FormContains{
-        /* border:1px solid azure; */
-        width:400px;
-        height:36px;
-        
+.FormContains {
+        border: 1px solid azure;
+        width: 400px;
+        height: 36px;
+
         position: relative;
-        left:50px;
-        top:50px;
-        display:flex;
+        left: 50px;
+        top: 50px;
+        display: flex;
         justify-content: space-between;
         margin: 0px 0px 20px 0px;
 }
-.LABALS{
-        font-size:1.3rem;
+
+.LABALS {
+        font-size: 1.3rem;
 }
-.LogInputs{
-        border:1px solid azure;
-        width:300px;
-        height:35px;
-        border-radius:7px;
+
+.LogInputs {
+        border: 1px solid azure;
+        width: 300px;
+        height: 35px;
+        border-radius: 7px;
         background-color: rgba(48, 39, 39, 0.2);
         font-size: 1.2rem;
 }
-#btns{
-        border:1px solid azure;
-        width:300px;
-        height:35px;
-        border-radius:7px;
+
+#btns {
+        border: 1px solid azure;
+        width: 300px;
+        height: 35px;
+        border-radius: 7px;
         background-color: rgb(119, 169, 186);
         font-size: 1.3rem;
-        border:none;
+        border: none;
 }
-.btnFormContain{
+
+.btnFormContain {
         /* border:1px solid azure; */
-        width:400px;
-        height:36px;
+        width: 400px;
+        height: 36px;
         position: relative;
-        left:50px;
-        top:50px;
-        display:flex;
+        left: 50px;
+        top: 50px;
+        display: flex;
         justify-content: space-between;
         margin: 30px 0px 0px 0px;
-        padding-left:70px;
+        padding-left: 70px;
 }
-#createAccount{
-        border:1px solid azure;
-        position:relative;
-        left:200px;
-        top:70px;
+
+#createAccount {
+        border: 1px solid azure;
+        position: relative;
+        left: 200px;
+        top: 70px;
         width: 150px;
-        height:30px;
-        border-radius:20px;
+        height: 30px;
+        border-radius: 20px;
         text-align: center;
-        padding-top:5px;
+        padding-top: 5px;
 }
-a{
+
+a {
         text-decoration: none;
 }
 
@@ -192,175 +211,221 @@ a{
 
 
 
-@media (width <= 1096px){
-        .LogIn{
-                width:450px;
-                height:400px;
+@media (width <=1096px) {
+        .LogIn {
+                width: 450px;
+                height: 400px;
         }
-        .main{
-                height:470px;
+
+        .main {
+                height: 470px;
         }
-        .FormContains{
+
+        .FormContains {
                 width: 350px;
         }
-        #btns{
-                width:250px;
+
+        #btns {
+                width: 250px;
         }
-        .btnFormContain{
-                left:30px;
+
+        .btnFormContain {
+                left: 30px;
         }
-        .LogInputs{
-                width:250px;
+
+        .LogInputs {
+                width: 250px;
 
         }
-        .imgContainer{
-                width:450px;
+
+        .imgContainer {
+                width: 450px;
         }
-        .Text{
+
+        .Texts {
                 font-size: 2.3rem;
-                left:30px;
+                left: 30px;
         }
-        #createAccount{
-                left:170px;
-                top:30px;
+
+        #createAccount {
+                left: 170px;
+                top: 30px;
         }
 }
 
-@media (width <= 956px ){
-        .imgContainer{
-                width:400px;
+@media (width <=956px) {
+        .imgContainer {
+                width: 400px;
         }
-        .Text{
+
+        .Texts {
                 font-size: 2rem;
         }
-        .LogIn{
-                width:400px;
-                height:400px;
+
+        .LogIn {
+                width: 400px;
+                height: 400px;
         }
-        .btnFormContain{
-              width: 350px;
+
+        .btnFormContain {
+                width: 350px;
         }
-        .FormContains{
-                left:30px;
+
+        .FormContains {
+                left: 30px;
         }
 }
-@media (width <= 919px){
-     
-        .imgContainer{
-                width:380px;
-              
+
+@media (width <=919px) {
+
+        .imgContainer {
+                width: 380px;
+
         }
-        .Text{
+
+        .Texts {
                 font-size: 1.8rem;
         }
-        .btnFormContain{
+
+        .btnFormContain {
                 width: 350px;
-                margin-right:40px;
+                margin-right: 40px;
         }
-        #createAccount{
-                left:150px;
-                top:30px;
+
+        #createAccount {
+                left: 150px;
+                top: 30px;
         }
 }
-@media (width <= 886px) {
-     
-        .imgContainer{
-                width:400px;
+
+@media (width <=886px) {
+
+        .imgContainer {
+                width: 400px;
         }
-        .Text{
+
+        .Texts {
                 font-size: 2rem;
         }
-        .LogIn{
-                width:400px;
-                height:400px;
+
+        .LogIn {
+                width: 400px;
+                height: 400px;
         }
-        .FormContains{
-                left:30px;
+
+        .FormContains {
+                left: 30px;
                 width: 350px;
         }
 }
 
-@media (width <= 801px){
-        .imgContainer{
-                width:340px;
+@media (width <=801px) {
+        .imgContainer {
+                width: 340px;
         }
-        .Text{
+
+        .Texts {
                 font-size: 1.7rem;
         }
 
 
-        .LogIn{
-                width:340px;
-                height:400px;
+        .LogIn {
+                width: 340px;
+                height: 400px;
         }
-        .FormContains{
-                width:305px;
-                left:20px;
+
+        .FormContains {
+                width: 305px;
+                left: 20px;
         }
-        .LogInputs{
+
+        .LogInputs {
                 margin-left: 5px;
-                width:300px;
+                width: 300px;
         }
-        .btnFormContain{
+
+        .btnFormContain {
                 width: 310px;
                 padding-left: 40px;
         }
-        #createAccount{
-                left:115px;
-                top:30px;
+
+        #createAccount {
+                left: 115px;
+                top: 30px;
         }
 }
 
 
 /*Tablet ---1st*/
-@media (width <= 768px){
+@media (width <=768px) {
 
-        .btnFormContain{
+        .btnFormContain {
                 width: 290px;
                 padding-left: 30px;
                 left: 20px;
         }
-        .FormContains{
-                width:305px;
-                left:20px;
-        }
-        .LogInputs{
-                margin-left: 5px;
-                width:290px;
-        }
-        #createAccount{
-                left:100px;
-                top:30px;
-        }
-        .Text{
-                left:20px;
-        }
-        .LogIn{
-                margin-right:10px;
-        }
-        .main{
-                width:810px;
-                height:600px;
-                padding-top:50px;
-        }
-}
-@media (width <= 753px){
 
-        .Container{
-                margin-inline:0px;
-                display: flex;
-                justify-content:right;
+        .FormContains {
+                width: 305px;
+                left: 20px;
         }
-        .ContaiN{
-                margin-inline:10px;
-                display:flex;
-                justify-content:space-between;
-                width:200px;
+
+        .LogInputs {
+                margin-left: 5px;
+                width: 290px;
+        }
+
+        #createAccount {
+                left: 100px;
+                top: 30px;
+        }
+
+        .Texts {
+                left: 20px;
+        }
+
+        /* .LogIn{
+                margin-right:10px;
+        } */
+        .main {
+                width: 768px;
+                height: 475px;
+                padding-top: 50px;
+        }
+
+        #home-hader {
+                width: 768px;
         }
 }
-@media ( width <= 691px){
-       
-        .main{
+
+@media (width <=753px) {
+
+        .Container {
+                margin-inline: 0px;
+                display: flex;
+                justify-content: right;
+        }
+
+        .ContaiN {
+                margin-inline: 10px;
+                display: flex;
+                justify-content: space-between;
+                width: 200px;
+        }
+}
+
+@media (width <=689px) {
+        #home-hader {
+                width: 688px;
+        }
+
+        .Texts {
+
+                left: 25px;
+        }
+
+        .main {
+                width: 688px;
                 /* display: flex;
                 flex-direction: column;
         
@@ -368,371 +433,535 @@ a{
 
                 flex-direction: column;
                 justify-content: space-evenly;
-                height:890px;
+                height: 890px;
                 align-items: center;
         }
-        .imgContainer{
-                width:590px;
-                /* margin-left: 50px; */
+
+        .imgContainer {
+                width: 440px;
+                margin-left: 28px;
         }
-        .Text{
-                font-size: 2.5rem;
-                left:50px;
+
+        .Texts {
+                font-size: 2rem;
+                left: 40px;
         }
-        
-        
-        .LogIn{
-                margin-left: 50px;
-                width:380px;
-                height:400px;
+
+
+        .LogIn {
+                margin-left: 30px;
+                width: 380px;
+                height: 400px;
                 /* margin-left: 150px; */
         }
-        .FormContains{
-                width:310px;
-                left:30px;
+
+        .FormContains {
+                width: 310px;
+                left: 30px;
         }
-        .LogInputs{
-    
+
+        .LogInputs {
+
                 margin-left: 10px;
 
         }
-        .btnFormContain{
+
+        .btnFormContain {
                 width: 310px;
                 padding-left: 40px;
         }
-        #createAccount{
-                left:115px;
-                top:30px;
+
+        #createAccount {
+                left: 115px;
+                top: 30px;
         }
 }
-@media (width <= 667px){
-       
-        .imgContainer{
-                width:530px;
+
+@media (width <=667px) {
+
+        .imgContainer {
+                width: 530px;
                 margin-left: 70px;
         }
-        .Text{
+
+        .Text {
                 font-size: 2.5rem;
-                left:50px;
+                left: 50px;
         }
 }
-@media ( width <= 652px ){
-    
-        .imgContainer{
-                width:550px;
+
+@media (width <=652px) {
+
+        .imgContainer {
+                width: 550px;
                 height: 300px;
                 margin-left: 50px;
-             
+
         }
-        .Text{
+
+        .Text {
                 font-size: 2.2rem;
-       
+
         }
-        .main{
+
+        .main {
                 height: 800px;
         }
-        
+
 }
-@media ( width <= 642px){
-        #home-hader{
-                width:642px;
+
+@media (width <=642px) {
+        #home-hader {
+                width: 642px;
         }
-        .imgContainer{
-                width:500px;
-                margin-left:70px;
+
+        .imgContainer {
+                width: 500px;
+                margin-left: 70px;
         }
-        .LogIn{
+
+        .LogIn {
                 margin-left: 130px;
         }
 }
-@media ( width <= 619px)  {
-        .imgContainer{
-                width:470px;
-                margin-left:70px;
+
+@media (width <=619px) {
+        .imgContainer {
+                width: 470px;
+                margin-left: 70px;
         }
-        .LogIn{
+
+        .LogIn {
                 margin-left: 120px;
         }
 }
-@media ( width <= 588px){
-        .imgContainer{
-                width:380px;
-                margin-left:100px;
-        }
-        .Text{
-                top:80px;
-                left:30px;
-                font-size: 1.8rem;
-        } 
-        .LogIn{
+
+@media (width <=588px) {
+        .imgContainer {
+                width: 380px;
                 margin-left: 100px;
         }
-        .main{
-                height:780px;
+
+        .Text {
+                top: 80px;
+                left: 30px;
+                font-size: 1.8rem;
+        }
+
+        .LogIn {
+                margin-left: 100px;
+        }
+
+        .main {
+                height: 780px;
         }
 }
-@media (width <= 511px){
-        .imgContainer{
-                margin-left:70px;
+
+@media (width <=511px) {
+        .imgContainer {
+                margin-left: 70px;
         }
-        .LogIn{
+
+        .LogIn {
                 margin-left: 70px;
         }
 }
-@media (width <= 478px){
-        .imgContainer{
-                margin-left:50px;
-        }
-        .LogIn{
+
+@media (width <=478px) {
+        .imgContainer {
                 margin-left: 50px;
-        }  
-}
-@media (width <= 459px){
-     
-        .imgContainer{
-                margin-left:40px;
         }
-        .LogIn{
-                margin-left: 40px;
-        }  
-}
-@media (width <= 426px){
-       
-        .imgContainer{
-                margin-left:30px;
-                width:350px;
+
+        .LogIn {
+                margin-left: 50px;
         }
-        .LogIn{
+}
+
+@media (width <=459px) {
+
+        .imgContainer {
                 margin-left: 40px;
-                width:350px;
+        }
+
+        .LogIn {
+                margin-left: 40px;
+        }
+}
+
+@media (width <=427px) {
+
+        #home-hader {
+                width: 425px;
+        }
+
+        .imgContainer {
+                margin-left: 5px;
+                width: 330px;
+                /* margin-right:10px; */
+        }
+
+        .Texts {
+                left: 28px;
+        }
+
+        .LogIn {
+                margin-left: 5px;
+                width: 340px;
+        }
+
+        .FormContains {
+                left: 15px;
         }
 
         /* .Haderssss{
                 width:700px
         } */
-        .ContaiN{
-                width:180px;
+        .ContaiN {
+                width: 180px;
                 padding-left: 20px;
         }
-        .navITems{
+
+        .navITems {
                 font-size: 1rem;
         }
+
         /* body{
                 width:425px;
-        } */
-        .Text{
-                left:20px;
-        }
-        .main{
-                height: 945px;
-        }
-        .imgContainer{
-                height:350px;
-        }
-}
-@media (width <= 380px){
-       
-        .imgContainer{
-                width:380px;
-                height:390px;
-        }
-        .LogIn{
-                margin-left: 40px;
-                width:370px;
-        }
-        .FormContains{
-                width:300px; 
-                left:40px;
-                height:30px;
-        }
-        .LogInputs{
-                width: 190px;
-                height:30px;
-        }
-        .LABALS{
-                font-size: 1.2rem;
-
-        }
-        .Text{
-                font-size: 2rem;
-        }
-
-        .btnFormContain{
-                width: 260px;
-                padding-left: 30px;
-                height:31px;
-                left:60px;
-        }
-        #btns{
-                width:200px;
-                height:30px;
-                font-size: 1.3rem;
-        }
-        #createAccount{
-                left:105px;
-                top:30px;
-        }
-        #admins{
-                font-size: 2rem;
-        }
-        .main{
-                height:1080px;
-        }
-}
-/*vivo YO2 phone*/
-@media (width <= 355px){
-        #home-hader{
-                width:354px;
-                height: 35px;
-        }
-        .main{
-                width:354px;
-        }
-        .imgContainer{
-                width:300px;
-                margin-left: 6px;
-        }
-        .LogIn{
-                width:300px;
-                margin-left: 10px;
-        }
-        .LogInputs{
-                margin-left: 0px;
-        }
-        .FormContains{
-                left:10px;
-                justify-content: space-between;
-                width:280px;
-        }
-        .btnFormContain{
-                left:20px;
-        }
-        #createAccount{
-                left:80px;
-        }
-
-}
-@media (width <= 336px){
-     
-        .imgContainer{
-                width:270px;
-                margin-left: 35px;
-        }
-        .LogIn{
-                width:270px;
-                margin-left: 35px;
-        }
-        .FormContains{
-                width:220px; 
-                left:15px;
-                height:30px;
-        }
-        .LogInputs{
-                width: 140px;
-                height:30px;
-        }
-        .LABALS{
-                font-size: 0.9rem;
-
-        }
-        .Text{
-                font-size: 1.3rem;
-        }
-
-        .btnFormContain{
-                width: 220px;
-                padding-left: 30px;
-                height:28px
-        }
-        #btns{
-                width:200px;
-                height:28px;
-        }
-        #createAccount{
-                left:75px;
-                top:30px;
-                width:130px;
-        }
-        #admins{
-                font-size: 1.6rem;
-        }
-}
-@media (width <= 321px){
-       
-        .imgContainer{
-                width:270px;
-                margin-left: 26px;
-        }
-        .LogIn{
-                width:270px;
-                margin-left: 26px;
-        }
-        .FormContain{
-                width:310px;
-                left:20px;
-        }
-        .btnFormContain{
-                width: 210px;
-                padding-left: 20px;
-                height:26px;
+                } */
+        .Texts {
                 left: 20px;
         }
-        #btns{
-                width:200px;
-                height:25px;
+
+        .main {
+                width: 425px;
+                height: 945px;
         }
-        #admins{
-                font-size: 1.6rem;
-        }
-        .main{
-                height:1300px;
+
+        .imgContainer {
+                height: 350px;
         }
 }
-@media (width <= 286px){
-       
-        .imgContainer{
-                width:250px;
+
+@media (width <=381px) {
+        #home-hader {
+                width: 380px
+        }
+
+        .LogIn {
+                margin-left: 5px;
+                width: 330px;
+        }
+
+        .FormContains {
+                width: 300px;
+                left: 15px;
+                height: 30px;
+        }
+
+        .LogInputs {
+                width: 190px;
+                height: 30px;
+        }
+
+        .LABALS {
+                font-size: 1.2rem;
+
+        }
+
+        .Texts {
+                font-size: 2rem;
+        }
+
+        .btnFormContain {
+                width: 260px;
+                padding-left: 30px;
+                height: 31px;
+                left: 60px;
+        }
+
+        #btns {
+                width: 200px;
+                height: 30px;
+                font-size: 1.3rem;
+        }
+
+        #createAccount {
+                left: 105px;
+                top: 30px;
+        }
+
+        #admins {
+                font-size: 2rem;
+        }
+
+        .main {
+                width: 380px;
+                height: 1080px;
+        }
+}
+
+@media (width <=376px) {
+        #home-hader {
+                width: 375px
+        }
+
+        .LogIn {
+                margin-left: 5px;
+                width: 330px;
+        }
+
+        .FormContains {
+                width: 300px;
+                left: 15px;
+                height: 30px;
+        }
+
+        .LogInputs {
+                width: 190px;
+                height: 30px;
+        }
+
+        .LABALS {
+                font-size: 1.2rem;
+
+        }
+
+        .Texts {
+                font-size: 2rem;
+        }
+
+        .btnFormContain {
+                width: 260px;
+                padding-left: 30px;
+                height: 31px;
+                left: 60px;
+        }
+
+        #btns {
+                width: 200px;
+                height: 30px;
+                font-size: 1.3rem;
+        }
+
+        #createAccount {
+                left: 105px;
+                top: 30px;
+        }
+
+        #admins {
+                font-size: 2rem;
+        }
+
+        .main {
+                width: 375px;
+                height: 1080px;
+        }
+}
+
+
+
+
+
+/*vivo YO2 phone*/
+@media (width <=356px) {
+        #home-hader {
+                width: 354px;
+                height: 35px;
+        }
+
+        .main {
+                width: 354px;
+        }
+
+        .imgContainer {
+                width: 300px;
+                margin-left: 6px;
+        }
+
+        .LogIn {
+                width: 300px;
+                margin-left: 10px;
+        }
+
+        .LogInputs {
+                margin-left: 0px;
+        }
+
+        .FormContains {
+                left: 10px;
+                justify-content: space-between;
+                width: 280px;
+        }
+
+        .btnFormContain {
+                left: 20px;
+        }
+
+        #createAccount {
+                left: 80px;
+        }
+
+}
+/*M-Phone*/
+@media (width <=336px) {
+
+        .imgContainer {
+                width: 290px;
+                margin-left: 10px;
+        }
+
+        .LogIn {
+                width: 270px;
+                margin-left: 35px;
+        }
+
+        .FormContains {
+                width: 220px;
+                left: 15px;
+                height: 30px;
+        }
+
+        .LogInputs {
+                width: 140px;
+                height: 30px;
+        }
+
+        .LABALS {
+                font-size: 0.9rem;
+        }
+
+        #home-hader {
+                width: 334px;
+                height: 35px;
+        }
+
+        /* .Texts {
+                font-size: 1.5rem;
+
+        } */
+
+        .main {
+                width: 334px;
+        }
+
+        .btnFormContain {
+                width: 220px;
+                padding-left: 30px;
+                height: 28px
+        }
+
+        #btns {
+                width: 200px;
+                height: 28px;
+        }
+
+        #createAccount {
+                left: 75px;
+                top: 30px;
+                width: 130px;
+        }
+
+        #admins {
+                font-size: 1.6rem;
+        }
+}
+
+
+/*Not use --*/
+@media (width <=321px) {
+
+        .imgContainer {
+                width: 270px;
+                margin-left: 26px;
+        }
+
+        .LogIn {
+                width: 270px;
+                margin-left: 26px;
+        }
+
+        .FormContain {
+                width: 310px;
+                left: 20px;
+        }
+
+        .btnFormContain {
+                width: 210px;
+                padding-left: 20px;
+                height: 26px;
+                left: 20px;
+        }
+
+        #btns {
+                width: 200px;
+                height: 25px;
+        }
+
+        #admins {
+                font-size: 1.6rem;
+        }
+
+        .main {
+                height: 1300px;
+        }
+}
+
+@media (width <=286px) {
+
+        .imgContainer {
+                width: 250px;
                 margin-left: 17px;
         }
-        .LogIn{
-                width:250px;
+
+        .LogIn {
+                width: 250px;
                 margin-left: 17px;
         }
-        .FormContain{
-                width:310px;
-                left:20px;
+
+        .FormContain {
+                width: 310px;
+                left: 20px;
         }
-        .Text{
+
+        .Text {
                 font-size: 1.2rem;
         }
-        #admins{
+
+        #admins {
                 font-size: 1.6rem;
         }
 }
-@media (width <= 274px){
+
+@media (width <=274px) {
+
         /* body {
                 width: 100vw;
                 overflow: hidden;
         } */
-        .imgContainer{
-                width:250px;
+        .imgContainer {
+                width: 250px;
                 margin-left: 12px;
         }
-        .LogIn{
-                width:250px;
+
+        .LogIn {
+                width: 250px;
                 margin-left: 12px;
         }
-        .FormContain{
-                width:310px;
-                left:20px;
+
+        .FormContain {
+                width: 310px;
+                left: 20px;
         }
-        .Text{
+
+        .Text {
                 font-size: 1.2rem;
         }
-        #admins{
+
+        #admins {
                 font-size: 1.6rem;
         }
 }
+
 /* @media (width <= 426px){
         .FormContain{
                 width:310px;

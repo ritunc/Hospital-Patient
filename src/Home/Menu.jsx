@@ -72,9 +72,9 @@ const Menu = () => {
    <>
      <main className='main'>
                 <div className="imgContainer">
-                        <h1 className="Text">{h1}</h1>
-                        <h2 className="Text">{h2}</h2>
-                        <h3 className="Text">{h3}</h3>
+                        <h1 className="Texts">{h1}</h1>
+                        <h2 className="Texts">{h2}</h2>
+                        <h3 className="Texts">{h3}</h3>
                 </div>
                 <div className="LogIn">
                         <h1 id="admins">{logIn}</h1>
