@@ -765,12 +765,12 @@ a {
 /*vivo YO2 phone*/
 @media (width <=355px) {
         #home-hader {
-                width: 351px;
+                width: 349px;
                 height: 35px;
         }
 
         .main {
-                width: 351px;
+                width: 349px;
         }
 
         .imgContainer {
