@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Data } from '../NavItem';
 import NavCreate from './Nav_Edit';
 import { useNavigate } from 'react-router-dom';
-import './Edit.css';
+// import './Edit.css';
 import { Medicine } from './Medicine';
 import { Desies } from './Desies';
 

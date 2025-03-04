@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useQuery } from 'react-query'
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import NavProfile from './Nav_Profile';
-import './Profile.css';
+// import './Profile.css';
 import { Data } from '../NavItem';
 import { collapse } from '../Create/Create';
 

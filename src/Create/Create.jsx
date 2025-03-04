@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Data } from '../NavItem';
 import NavCreate from './Nav_Create';
 import { useNavigate } from 'react-router-dom';
-import './Create.css';
+// import './Create.css';
 import Web_cam from 'react-webcam';
 
 

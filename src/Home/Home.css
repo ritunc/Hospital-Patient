@@ -1,4 +1,4 @@
-* {
+/* * {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
@@ -7,39 +7,38 @@
 }
 
 .Home-body_color {
-        /* background-color: rgb(19, 47, 61); */
+    
         background-color: black;
 }
 
 #home-hader {
         width: 1244px;
         height: 40px;
-        /* background-color: rgb(119, 169, 186); */
-        /* background-color: rgb(119, 169, 186); */
+     
         padding-top: 10px;
 }
 
 .Container {
-        /* border: 1px solid azure; */
+        border: 1px solid azure;
         margin-inline: 100px;
 }
 
 .ContaiN {
-        /* border: 1px solid azure; */
+        border: 1px solid azure;
         display: flex;
         justify-content: space-evenly;
         margin-inline: 200px;
 }
 
 li {
-        /* border: 1px solid azure; */
+        border: 1px solid azure;
         list-style: none;
         font-size: 1.3rem;
         cursor: pointer;
-}
+} */
 
 
-.main {
+/* .main {
         border: 1px solid azure;
         display: flex;
         justify-content: space-evenly;
@@ -61,10 +60,9 @@ li {
 }
 
 .imgContainer {
-        /* border:3px solid azure; */
+        
         position: relative;
-        /* border-right:3px solid rgb(16, 144, 144);
-        border-top:3px solid #ce14ce; */
+
         background-color: rgb(19, 47, 61);
         width: 600px;
         height: 400px;
@@ -85,9 +83,9 @@ li {
         animation-duration: 4s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
-}
+} */
 
-.imgContainer::after {
+/* .imgContainer::after {
         content: '';
         position: absolute;
         background: rgb(19, 47, 61);
@@ -133,7 +131,7 @@ li {
 }
 
 .home-form {
-        /* border:1px solid azure; */
+   
         display: flex;
         flex-direction: column;
         width: auto;
@@ -177,7 +175,7 @@ li {
 }
 
 .btnFormContain {
-        /* border:1px solid azure; */
+   
         width: 400px;
         height: 36px;
         position: relative;
@@ -203,7 +201,7 @@ li {
 
 a {
         text-decoration: none;
-}
+} */
 
 
 
@@ -211,7 +209,7 @@ a {
 
 
 
-@media (width <=1096px) {
+/* @media (width <=1096px) {
         .LogIn {
                 width: 450px;
                 height: 400px;
@@ -353,11 +351,11 @@ a {
                 left: 115px;
                 top: 30px;
         }
-}
+} */
 
 
 /*Tablet ---1st*/
-@media (width <=768px) {
+/* @media (width <=768px) {
 
         .btnFormContain {
                 width: 290px;
@@ -384,9 +382,6 @@ a {
                 left: 20px;
         }
 
-        /* .LogIn{
-                margin-right:10px;
-        } */
         .main {
                 width: 768px;
                 height: 475px;
@@ -396,9 +391,9 @@ a {
         #home-hader {
                 width: 768px;
         }
-}
+} */
 
-@media (width <=753px) {
+/* @media (width <=753px) {
 
         .Container {
                 margin-inline: 0px;
@@ -426,10 +421,7 @@ a {
 
         .main {
                 width: 688px;
-                /* display: flex;
-                flex-direction: column;
-        
-                height:900px; */
+         
 
                 flex-direction: column;
                 justify-content: space-evenly;
@@ -452,7 +444,7 @@ a {
                 margin-left: 30px;
                 width: 380px;
                 height: 400px;
-                /* margin-left: 150px; */
+              
         }
 
         .FormContains {
@@ -475,9 +467,9 @@ a {
                 left: 115px;
                 top: 30px;
         }
-}
+} */
 
-@media (width <=667px) {
+/* @media (width <=667px) {
 
         .imgContainer {
                 width: 530px;
@@ -597,7 +589,7 @@ a {
         .imgContainer {
                 margin-left: 5px;
                 width: 330px;
-                /* margin-right:10px; */
+              
         }
 
         .Texts {
@@ -613,9 +605,7 @@ a {
                 left: 15px;
         }
 
-        /* .Haderssss{
-                width:700px
-        } */
+    
         .ContaiN {
                 width: 180px;
                 padding-left: 20px;
@@ -625,9 +615,7 @@ a {
                 font-size: 1rem;
         }
 
-        /* body{
-                width:425px;
-                } */
+     
         .Texts {
                 left: 20px;
         }
@@ -640,9 +628,9 @@ a {
         .imgContainer {
                 height: 350px;
         }
-}
+} */
 
-@media (width <=381px) {
+/* @media (width <=381px) {
         #home-hader {
                 width: 380px
         }
@@ -763,7 +751,7 @@ a {
 
 
 /*vivo YO2 phone*/
-@media (width <=355px) {
+/* @media (width <=355px) {
         #home-hader {
                 width: 349px;
                 height: 35px;
@@ -801,9 +789,9 @@ a {
                 left: 80px;
         }
 
-}
+}  */
 /*M-Phone*/
-@media (width <=336px) {
+/* @media (width <=336px) {
 
         .imgContainer {
                 width: 290px;
@@ -835,10 +823,7 @@ a {
                 height: 35px;
         }
 
-        /* .Texts {
-                font-size: 1.5rem;
-
-        } */
+      
 
         .main {
                 width: 334px;
@@ -864,11 +849,11 @@ a {
         #admins {
                 font-size: 1.6rem;
         }
-}
+} */
 
 
 /*Not use --*/
-@media (width <=321px) {
+/* @media (width <=321px) {
 
         .imgContainer {
                 width: 270px;
@@ -934,10 +919,6 @@ a {
 
 @media (width <=274px) {
 
-        /* body {
-                width: 100vw;
-                overflow: hidden;
-        } */
         .imgContainer {
                 width: 250px;
                 margin-left: 12px;
@@ -960,7 +941,7 @@ a {
         #admins {
                 font-size: 1.6rem;
         }
-}
+} */
 
 /* @media (width <= 426px){
         .FormContain{
@@ -1004,3 +985,501 @@ a {
                 top:30px;
         }
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: black;
+}
+
+.container {
+        /* border: 1px solid azure; */
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+}
+
+header {
+        background-color: rgb(119, 169, 186);
+        color: white;
+        padding: 0.7rem 0;
+        /* z-index: 2; */
+}
+
+nav {
+        /* border: 1px solid azure; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* z-index: 3; */
+}
+
+.logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+}
+
+.nav-links {
+        /* border: 1px solid azure; */
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        /* z-index: 4; */
+}
+
+.nav-links li {
+        /* border: 1px solid azure; */
+        display: flex;
+        justify-content: space-around;
+        width: 200px;
+        /* z-index: 5; */
+}
+
+.nav-links a {
+        /* border: 1px solid azure; */
+        color: white;
+        text-decoration: none;
+        /* z-index: 6; */
+}
+
+.nav-links .icon{
+        display: none;
+}
+
+.popUpMenu {
+        display: none;
+}
+.popDownMenue{
+        display: none;
+}
+
+
+
+
+/* Main Content */
+main {
+        /* border: 1px solid rgb(148, 20, 180); */
+        padding: 2rem 0;
+}
+
+
+
+.grid {
+        /* border: 1px solid rgb(13, 125, 9); */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+}
+
+.Texts {
+        color: rgb(242, 238, 238);
+        font-size: 2.7rem;
+}
+
+.card {
+        border: 2px solid azure;
+        z-index: 1;
+        /* border-image: linear-gradient(45deg, red, blue); */
+
+        /* padding: 0.1rem; */
+        background: #131219;
+        padding: 1.5rem;
+        border-radius: 15px;
+        /* box-shadow: 0 2px 5px rgba(234, 228, 228, 0.886); */
+}
+
+
+
+
+.card-rotate {
+        border: 5px solid transparent;
+
+        background: linear-gradient(#131219, #131219) padding-box, linear-gradient(var(--angle),
+                        rgb(16, 144, 144), #ce14ce) border-box;
+        animation: 3s rotate linear infinite;
+
+}
+
+@keyframes rotate {
+        to {
+                --angle: 360deg;
+        }
+}
+
+@property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+}
+
+/* @keyframes rot {
+        0% {
+                transform: rotate(0deg)
+        }
+
+        100% {
+                transform: rotate(360deg);
+        }
+} */
+
+.card-rotate h1 {
+        margin-top: 2.9rem;
+}
+
+.card-rotate h3 {
+        margin-bottom: 2.7rem;
+}
+
+
+
+/* Footer */
+footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: auto;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+        /* .nav-links {
+                display: none;
+        } */
+
+        /* .hero {
+                padding: 2rem 0;
+        } */
+
+        .grid {
+                grid-template-columns: 1fr;
+        }
+}
+
+@media (max-width: 480px) {
+        .container {
+                padding: 0 10px;
+        }
+
+        .Texts {
+                font-size: 2.2rem;
+        }
+
+        /* .nav-links {
+                display: none;
+        } */
+}
+
+@media (max-width: 400px) {
+        .Texts {
+                font-size: 1.9rem;
+        }
+        .nav-links a{
+                display: none;
+        }
+        .nav-links .icon{
+                display: block;
+        }
+        .nav-links li{
+                width:50px;
+        }
+
+        .popUpMenu{
+                display: block;
+                /* border: 2px solid transparent; */
+                position:absolute;
+                right: 10px;
+                top:-39px;
+                z-index: -1;
+                list-style: none;
+                background-color: rgb(19, 47, 61);
+                border-radius: 7px;
+        }
+        .popDownMenue{
+                display: block;
+                /* border: 2px solid transparent;   */
+                position:absolute;
+                right: 10px;
+                z-index: 2 ;  /* it is keep over from color gradient card */
+                list-style: none;
+                background-color: rgb(19, 47, 61);
+                border-radius: 7px;
+                animation: 0.2s popDown ease-out;
+                
+        }
+        @keyframes popDown {
+                0%{
+                        /* z-index: -1; */
+                        opacity: 0;
+                        top:-30px;
+                     
+                } 25%{
+                        opacity: 0;
+                        /* top:-10px; */
+
+                } 50%{
+                        opacity: 0.1;
+                        /* top:40px; */
+                        /* z-index: 0 ; */
+                } 75%{
+                        opacity: 0.4;
+                }
+                 100%{
+                        top:62px;
+                        opacity: 1;
+                }
+        }
+        .popUpMenu li{
+                /* border: 1px solid azure; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                width:100px;
+        }
+        .popUpMenu a{
+                /* border: 1px solid azure; */
+                color: white;
+                text-decoration: none;
+                padding:10px 0;
+        }
+        
+        .popDownMenue li{
+                /* border: 1px solid azure; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                width:100px;
+                border-radius: 8px;
+        }
+        .popDownMenue a{
+                /* border: 1px solid azure; */
+                color: white;
+                text-decoration: none;
+                padding:10px 20px;
+                border-radius: 8px;
+        }
+        .popDownMenue a:active{
+                background-color: rgb(9, 148, 9);
+        }
+
+        .card-rotate2 {
+                border: 2px solid transparent;
+                border-radius: 8px;
+        
+                background: linear-gradient(#131219, #131219) padding-box, linear-gradient(var(--angle),
+                                rgb(16, 144, 144), #ce14ce) border-box;
+                animation: 3s rotate linear infinite;
+        
+        }
+        
+        @keyframes rotate {
+                to {
+                        --angle: 360deg;
+                }
+        }
+        
+        @property --angle {
+                syntax: "<angle>";
+                initial-value: 0deg;
+                inherits: false;
+        }
+       
+      
+}
+
+@media (max-width: 205px) {
+        .container {
+                padding: 0 7px;
+        }
+
+}
+
+
+
+
+/* Log In code*/
+
+.LogIn {
+        /* border: 1px solid rgb(171, 12, 168); */
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgb(19, 47, 61);
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+}
+
+#admins {
+        color: azure;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+}
+
+.home-form {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+}
+
+.FormContains {
+        /* border: 1px solid black; */
+        margin-bottom: 15px;
+}
+
+.LABALS {
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: #ebe2e2;
+}
+
+.LogInputs {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: rgba(48, 39, 39, 0.2)
+}
+
+.btnFormContain {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid black; */
+}
+
+#btns {
+        background-color: rgb(119, 169, 186);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+}
+
+#btns:hover {
+        background-color: #45a049;
+}
+
+#createAccount {
+        text-align: center;
+        margin-top: 20px;
+        /* border:1px solid azure; */
+}
+
+#createAccount a {
+        font-size: 14px;
+        color: #007BFF;
+        text-decoration: none;
+}
+
+#createAccount a:hover {
+        text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+        .LogIn {
+                width: 90%;
+                padding: 15px;
+        }
+
+        #admins {
+                font-size: 20px;
+        }
+
+        .LABALS {
+                font-size: 12px;
+        }
+
+        .LogInputs {
+                font-size: 14px;
+                padding: 8px;
+        }
+
+        #btns {
+                padding: 12px 25px;
+                font-size: 14px;
+        }
+
+        #createAccount a {
+                font-size: 13px;
+        }
+}
+
+@media (max-width: 400px) {
+        .LogIn {
+                width: 95%;
+                padding: 10px;
+        }
+
+        #admins {
+                font-size: 18px;
+        }
+
+        .LABALS {
+                font-size: 12px;
+        }
+
+        .LogInputs {
+                font-size: 12px;
+                padding: 6px;
+        }
+
+        #btns {
+                padding: 10px 20px;
+                font-size: 13px;
+        }
+
+        #createAccount a {
+                font-size: 12px;
+        }
+}
+
+
+
+
