@@ -1,18 +1,15 @@
-* {
+/* * {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
         color:azure;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-/* body{
-        background-color: rgb(19, 47, 61);
-} */
+
 header{
         width: auto;
         height:40px;
-        /* background-color: rgb(119, 169, 186); */
-        /* background-color: rgb(119, 169, 186); */
+     
         padding-top: 10px;
 }
 .container{
@@ -58,8 +55,8 @@ li{
         border-radius:7px;
         background-color: rgba(48, 39, 39, 0.2);
         font-size: 1.2rem;
-}
-#btn{
+} */
+/* #btn{
         border:1px solid azure;
         width:300px;
         height:35px;
@@ -70,7 +67,7 @@ li{
 }
 
 .formContains{
-        /* border:1px solid azure; */
+     
         width:400px;
         height:36px;
         
@@ -82,7 +79,7 @@ li{
         margin: 0px 0px 20px 0px;
 }
 .btnformContains{
-        /* border:1px solid azure; */
+       
         width:400px;
         height:36px;
         position: relative;
@@ -133,4 +130,337 @@ li{
         .menu{
                 height:1440px;
         }
+} */
+
+
+
+
+
+
+
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: black;
+}
+
+.container {
+      
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+}
+
+header {
+        background-color: rgb(119, 169, 186);
+        color: white;
+        padding: 0.7rem 0;
+      
+}
+
+nav {
+  
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     
+}
+
+.logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+}
+
+.nav-links {
+       
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+   
+}
+
+.nav-links li {
+       
+        display: flex;
+        justify-content: space-around;
+        width: 200px;
+
+}
+
+.nav-links a {
+      
+        color: white;
+        text-decoration: none;
+    
+}
+
+.nav-links .icon{
+        display: none;
+}
+
+.searchpopUpMenu {
+        display: none;
+}
+.searchpopDownMenue{
+        display: none;
+}
+
+
+
+
+/* General Styles */
+.SearchMain {
+        padding: 20px 20px 420px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* min-height: 100vh; */
+        /* background-color: #f4f4f4; */
+        background-color: rgb(0, 0, 0);
+        /* border: 1px solid rgb(23, 44, 182); */
+}
+
+.Searchsection {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        border: 1px solid black;
+        border-radius: 8px;
+        background-color: rgb(19, 47, 61);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        /* border: 1px solid azure; */
+        padding:10px 10px;
+}
+
+.forms {
+        /* border: 1px solid azure; */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+
+.formContains {
+        display: flex;
+        flex-direction: column;
+}
+
+.label {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color:azure;
+}
+
+.input {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: rgba(48, 39, 39, 0.2);
+}
+
+.btnformContains {
+        display: flex;
+        justify-content: center;
+}
+
+button {
+        background-color: rgb(119, 169, 186);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+}
+
+button:hover {
+        background-color: #0056b3;
+}
+
+button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+        .forms {
+                padding: 0 20px;
+        }
+
+        .formContains .label,
+        .input {
+                font-size: 14px;
+        }
+
+        button {
+                width: 100%;
+                font-size: 18px;
+        }
+}
+
+@media (max-width: 480px) {
+
+        .formContains .label,
+        .input {
+                font-size: 12px;
+        }
+
+        button {
+                padding: 10px;
+                font-size: 16px;
+        }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+        .container {
+                padding: 0 10px;
+        }
+
+        .Texts {
+                font-size: 2.2rem;
+        }
+
+        /* .nav-links {
+                display: none;
+        } */
+}
+
+@media (max-width: 400px) {
+        .Texts {
+                font-size: 1.9rem;
+        }
+        .nav-links a{
+                display: none;
+        }
+        .nav-links .icon{
+                display: block;
+        }
+        .nav-links li{
+                width:50px;
+        }
+
+        .searchpopUpMenu{
+                display: block;
+                /* border: 2px solid transparent; */
+                position:absolute;
+                right: 10px;
+                top:-39px;
+                z-index: -1;
+                list-style: none;
+                background-color: rgb(19, 47, 61);
+                border-radius: 7px;
+        }
+        .searchpopDownMenue{
+                display: block;
+                /* border: 2px solid transparent;   */
+                position:absolute;
+                right: 10px;
+                z-index: 2 ;  /* it is keep over from color gradient card */
+                list-style: none;
+                background-color: rgb(19, 47, 61);
+                border-radius: 7px;
+                animation: 0.2s popDown ease-out;
+                
+        }
+        @keyframes popDown {
+                0%{
+                        /* z-index: -1; */
+                        opacity: 0;
+                        top:-30px;
+                     
+                } 25%{
+                        opacity: 0;
+                        /* top:-10px; */
+
+                } 50%{
+                        opacity: 0.1;
+                        /* top:40px; */
+                        /* z-index: 0 ; */
+                } 75%{
+                        opacity: 0.4;
+                }
+                 100%{
+                        top:62px;
+                        opacity: 1;
+                }
+        }
+        .searchpopUpMenu li{
+                /* border: 1px solid azure; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                width:100px;
+        }
+        .searchpopUpMenu a{
+                /* border: 1px solid azure; */
+                color: white;
+                text-decoration: none;
+                padding:10px 0;
+        }
+        
+        .searchpopDownMenue li{
+                /* border: 1px solid azure; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                width:100px;
+                border-radius: 8px;
+        }
+        .searchpopDownMenue a{
+                /* border: 1px solid azure; */
+                color: white;
+                text-decoration: none;
+                padding:10px 10px;
+                border-radius: 8px;
+        }
+        .searchpopDownMenue a:active{
+                background-color: rgb(9, 148, 9);
+        }
+
+        .card-rotate2 {
+                border: 2px solid transparent;
+                border-radius: 8px;
+        
+                background: linear-gradient(#131219, #131219) padding-box, linear-gradient(var(--angle),
+                                rgb(16, 144, 144), #ce14ce) border-box;
+                animation: 3s rotate linear infinite;
+        
+        }
+        
+        @keyframes rotate {
+                to {
+                        --angle: 360deg;
+                }
+        }
+        
+        @property --angle {
+                syntax: "<angle>";
+                initial-value: 0deg;
+                inherits: false;
+        }
+       
+      
+}
+
+@media (max-width: 205px) {
+        .container {
+                padding: 0 7px;
+        }
+
 }

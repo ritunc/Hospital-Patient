@@ -2,7 +2,7 @@ import React from 'react'
 // import { Data } from '../NavItem';
 import Nav from './NavSearch';
 import Menu from './Menu';
-// import './Search.css';
+import './Search.css'; 
 // import { useNavigate } from 'react-router-dom';
 // import { useState } from 'react';
 import ContextProvider from './Context';

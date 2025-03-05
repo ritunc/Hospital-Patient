@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavLink } from './Context';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
         // let value;
@@ -13,16 +13,20 @@ const Menu = () => {
 
   return (
    <>
-      <main className='menu'>
-                <form className='forms'>
-                        <div className="formContains">
-                                <label className='label'>Code:</label>
-                                <input type="text" value={navLink.code} onChange={(event) => navLink.setCode(event.target.value)} autoComplete='off' className='input'/>
-                        </div>
-                        <div className="btnformContains">
-                        <Link to={`/profile/${navLink.code}`}><button type="submit" onClick={navLink.cleanInputfield} id="btn">Search</button></Link>
-                        </div>
-                </form>
+
+        <main className='SearchMain'>
+                <section className='Searchsection'>
+                        <form className='forms'>
+                                <div className="formContains">
+                                        <label className='label'>Code:</label>
+                                        <input type="text" value={navLink.code} onChange={(event) => navLink.setCode(event.target.value)} autoComplete='off' className='input'/>
+                                </div>
+                                <div className="btnformContains">
+                                <Link to={`/profile/${navLink.code}`}><button type="submit" onClick={navLink.cleanInputfield} id="btn">Search</button></Link>
+                                </div>
+                        </form>
+                </section>
+               
         </main>
    </>
   )

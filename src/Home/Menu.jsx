@@ -14,10 +14,11 @@ const Menu = () => {
         const ref1 = useRef(null);
         const ref2 = useRef(null);
         const cookie_data = () => {
+
                 console.log("we entered");
 
                 const cooki_data = document.cookie;
-                console.log("auth_datasss:", cooki_data)
+                console.log("auth_datasss:", cooki_data);
                 return cooki_data;
         }
         const [userlogin, setUserlogin] = useState({ email: "", password: "" });
