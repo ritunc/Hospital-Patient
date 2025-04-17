@@ -261,7 +261,7 @@ const Profile = () => {
                 const data2 = await res2.json();
                 if(data2){
                      setWorker(data2);    
-                     setMedreport({
+                     setMedreport({ /*Keep hole entry field empty as it before after taking input value and send to server */
                         code: "", Dates: "", hours: "", b_p: "", h_p: "", Pulse: "", Temp: "", Suger_Level: "", Complain: "", Paracetamol: "", Avil: "", Cetrizine: "",
                         Decolic: "", Asthalin: "", Neurobion_F: "", Primulate_N: "", Lasilactone: "", Trenexamic: "", Remark: "",
                      });    
@@ -294,7 +294,7 @@ const Profile = () => {
                          data && */}
                         
                           <section className="sectionProfile">
-                                <NavProfile NavItem={UserData} />
+                                <NavProfile NavItem={UserData}/>
                                 <main className="profilemain">
                                       
                                                 

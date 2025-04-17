@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Data } from '../NavItem';
 import NavCreate from './Nav_Create';
 import { useNavigate } from 'react-router-dom';
-// import './Create.css';
+import './Create.css';
 import Web_cam from 'react-webcam';
 
 
@@ -31,9 +31,13 @@ const Create = () => {
                         fetch(`https://hospital-backend-ibkd-one.vercel.app/info/userCreater`, {
 
                                 method: "post",
+
                                 headers: {
+
                                         "Content-Type": "application/json",
+
                                 },
+
                                 body: JSON.stringify([auth_datas])
                         })
                                 .then(response => response.json())
@@ -87,27 +91,28 @@ const Create = () => {
         }
 
         const UserInfo = async (e) => {
+
                 e.preventDefault();
 
                 function generateOTP(length = 6) {
                         let otp = '';
                         const characters = '0123456789'; // Numbers only
-                    
+
                         for (let i = 0; i < length; i++) {
-                            const randomIndex = Math.floor(Math.random() * characters.length);
-                            otp += characters[randomIndex];
+                                const randomIndex = Math.floor(Math.random() * characters.length);
+                                otp += characters[randomIndex];
                         }
-                    
+
                         return otp;
-                    }
-                    
+                }
+
 
 
                 const formData = new FormData();
                 const imageBlob = dataURLtoBlob(capture_Image);
                 formData.append('file', imageBlob, `captured-image${generateOTP()}.jpg`);
                 // formData.append('file', image);
-              
+
 
                 //http://localhost:5010
                 //http://localhost:5010
@@ -172,7 +177,7 @@ const Create = () => {
                 // height: 1820,
                 facingMode: 'environment',
         };
-         
+
 
         const capture = (e) => {
                 e.preventDefault()
@@ -202,13 +207,12 @@ const Create = () => {
 
         return (
                 <>
+                        <NavCreate NavItem={UserData} />
                         <section className='section_Create'>
-                                <NavCreate NavItem={UserData} />
 
                                 <main className='main_Menu'>
                                         <form id='Create-Formm'>
-                                                {/* action="/userCreate" method="post" enctype="multipart/form-data" */}
-                                                {/* <div className="Form-Container"> */}
+
 
 
                                                 <div className='firstrow'>
@@ -232,8 +236,7 @@ const Create = () => {
 
 
 
-                                                {/* </div> */}
-                                                {/* <div className="Form-Container"> */}
+
                                                 <div className='secondrow'>
                                                         <label className='Label'>Line Info:</label>
                                                         <input className="second-Data-Input" type="text" name="line_info" value={worker.line_info} onChange={handletextInput} />
@@ -253,9 +256,6 @@ const Create = () => {
 
 
 
-                                                {/* </div> */}
-
-                                                {/* <div className="UniformContain"> */}
 
                                                 <div className='thirdrow'>
                                                         <label className='Label'>Aadhaar No.:</label>
@@ -275,9 +275,7 @@ const Create = () => {
 
 
 
-                                                {/* </div> */}
 
-                                                {/* <div className="Uniform"> */}
 
                                                 <div className='forthrow'>
                                                         <label id='familyInfo' className='Label'>Family Info:</label>
@@ -287,10 +285,9 @@ const Create = () => {
 
                                                 <div className='forthrow'>
 
-                                                        <label className='Label' style={{position:'relative', bottom:'5px'}}>Image:</label>
-                                                        <img className="thirdrow_data-input" src={capture_Image} id="img" alt="Captured" style={{ }} />
-                                                        {/* <input className="thirdrow_data-input" type="file" id="img" accept="image/*" name="image" value={image.image} onChange={handlefileInput} /> */}
-                                                        {/* <input className="thirdrow_data-input" type="image" id="img" src="" accept="image/*" name="image" value={image.image} onChange={handlefileInput} /> */}
+                                                        <label className='Label' style={{ position: 'relative', bottom: '5px' }}>Image:</label>
+                                                        <img className="thirdrow_data-input" src={capture_Image} id="img" alt="Captured" style={{}} />
+
                                                 </div>
                                                 <div className='forthrow'>
 
@@ -298,11 +295,7 @@ const Create = () => {
                                                         <button id="Capture_Button" onClick={Take_Picture}>Camera On</button>
                                                         {
                                                                 Up_Images ? <>
-                                                                        {/* <div className='image_capture_container'>
-                                                                      <video id="video" style={{ border:"1px solid azure", width:'100px', height:'100px'}}></video>
-                                                                      <canvas id="canvas" style={{display:'none'}}></canvas>
-                                                                      <button id="button">Click</button>
-                                                                </div> */}
+
 
                                                                         <Web_cam id="Web_Cam" style={{}}
                                                                                 audio={false}
@@ -320,7 +313,7 @@ const Create = () => {
 
                                                 </div>
 
-                                                {/* </div> */}
+
 
                                         </form>
                                         <div className="ButtonformContains">

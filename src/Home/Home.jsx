@@ -5,8 +5,8 @@ import Nav from './Nav';
 import Menu from './Menu';
 
 const UserData = Data.map((curElem) => {
-                return curElem;
-        })
+  return curElem;
+})
 
 
 
@@ -14,8 +14,8 @@ const Home = () => {
 
   return (
     <>
-        <Nav NavItem={UserData}/>
-        <Menu/>
+      <Nav NavItem={UserData} />
+      <Menu />
     </>
   )
 }
