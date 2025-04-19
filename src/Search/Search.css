@@ -259,11 +259,12 @@ nav {
 }
 
 .input {
-        padding: 10px;
-        font-size: 16px;
+        padding:10px;
+        font-size: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
         background-color: rgba(48, 39, 39, 0.2);
+        color:azure;
 }
 
 .btnformContains {

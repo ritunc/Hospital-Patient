@@ -16,7 +16,7 @@ need all the pages only in home.css */
 } */
 
 header{
-        width: auto;
+        /* width: auto; */
         height:40px;
         background-color: rgb(119, 169, 186);
         /* background-color: rgb(119, 169, 186); */

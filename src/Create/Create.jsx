@@ -28,6 +28,7 @@ const Create = () => {
 
                 const userCreateData = () => {
 
+                        //
                         fetch(`https://hospital-backend-ibkd-one.vercel.app/info/userCreater`, {
 
                                 method: "post",
@@ -118,6 +119,7 @@ const Create = () => {
                 //http://localhost:5010
                 //http://localhost:5010
 
+                //
                 const res = await fetch(`https://hospital-backend-ibkd-one.vercel.app/worker/userCreateImage`, { method: "POST", body: formData })
                 const data = await res.json();
                 console.log(data);
@@ -125,6 +127,7 @@ const Create = () => {
                 // .then(res => res.json())
                 // .then((data) => console.log(data));
 
+                //
                 const res2 = await fetch(`https://hospital-backend-ibkd-one.vercel.app/worker/userCreate`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(worker) })
                 const data2 = await res2.json()
                 //        console.log(data2);

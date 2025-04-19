@@ -82,7 +82,7 @@ const Nav = () => {
                                                         {
                                                                 navLink.UserData.map((curElem, index) => {
                                                                         return (
-                                                                                <a key={index} > <Link to={curElem.link}> {curElem.li} </Link> </a>
+                                                                                <a key={index} > <Link to={curElem.link}  state={{ from: `/search` }}> {curElem.li} </Link> </a>
                                                                         )
                                                                 })
                                                         }

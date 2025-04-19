@@ -2,268 +2,359 @@
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
-        color:azure;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* color:azure; */
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
-body::-webkit-scrollbar{
-        display:none;
+
+/* body::-webkit-scrollbar {
+        display: none;
+} */
+
+/* Main Profile Section */
+.sectionProfile {
+        padding: 0 1rem;
+        background-color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.sectionProfile{
-        /* background-color: rgb(19, 47, 61); */
-        width:100vw;
-        height:764px;
-        display:flex;
+
+/* Main Wrapper */
+.profilemain {
+        display: flex;
         flex-direction: column;
+        gap: 2rem;
 }
-.Profilehader{
-        border:1px solid azure;
-        width: 1280px;
-        height:40px;
-        background-color: rgb(119, 169, 186);
-        /* background-color: rgb(119, 169, 186); */
-        padding-top: 10px;
-        position: fixed;
-        z-index: 1;
+
+/* Profile Layout */
+.profileform {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        background-color: rgb(19, 47, 61);
+        padding: 1.5rem;
+        border-radius: 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
-.profilecontainer{
-        margin-inline: 100px;
+
+/* Profile Image */
+.profile_image {
+        flex: 1 1 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
-.profilecontain{
+
+#profileimg {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #007bff;
+}
+
+/* Profile Text Info */
+.profile_info_1 {
+        flex: 2 1 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+}
+
+.profile_p,span {
+        font-size: 1rem;
+        background-color:transparent;
+        padding: 10px;
+        border-radius: 8px;
+        color:#fff;
+}
+
+.profile_p span {
+        font-weight: bold;
+        /* color: ; */
+}
+
+/* Horizontal Line */
+hr {
+        border: none;
+        height: 1px;
+        background-color: #ccc;
+}
+
+/* Form Buttons + Search */
+.form-2 {
+        background-color: rgb(19, 47, 61);
+        padding: 0.8rem;
+        border-radius: 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        max-width: 1270px;
+}
+
+.profile_info_3 {
+        /* border: 1px solid #fff; */
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+}
+
+
+
+
+.new_Entry_Search_container{
+        /* border:1px solid #fff; */
         display:flex;
-        justify-content: space-evenly;
-        margin-inline: 200px;
+        gap:0.7rem;
 }
-li{
-        list-style: none;
-        font-size:1.3rem;
+
+.profile-Search {
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        width: 100%;
+        max-width: 300px;
+        font-size: 20px;
+        background-color: transparent;
+}
+
+.profile-Search-button {
+        padding: 10px 16px;
+        border: none;
+        border-radius: 8px;
+        /* background-color: #007bff; */
+        background-color: rgb(43, 101, 129);
+        color: white;
+        font-weight: 500;
         cursor: pointer;
 }
 
+.space {
+        margin-left: 10px;
+}
+
+.profile-Search-button:hover {
+        background-color: #0056b3;
+}
 
 
 
-.profilemain{
-        border:1px solid azure;
-        display:flex;
+
+
+
+
+
+.tableScrollContainer {
+        /* border: 1px solid #fff; */
+        max-width: 1270px;
+        /* margin: 5px auto; give scrolling problem*/
+        background-color: transparent;
+        display: flex;
         flex-direction: column;
-        border-top: none;
-        width: 1280px;
-        height: 713px;
-        padding: 10px 5px 5px 5px;
-        position: relative;
-        top:50px;
+        /* gap: 5px; */
+        /* border-radius: 8px; */
+        /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); */
+        overflow-x: auto;
+        white-space: nowrap;
+        scroll-snap-type: x mandatory;
+
+        scrollbar-width: none;
+}
+
+.profile_table {
+        min-width: 900px;
+
+
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+
+        border: 1px solid #fff;
 
 }
 
-.profileform{
-        border:1px solid azure;
-        display:grid;
-        /* row-gap: 5px; */
-        /* column-gap: 5px; */
-        /* grid-template-columns: 20vw 200px 300px; */
-        /* grid-template-columns: 30% 70%; */
-        grid-template-columns: 300px 955px;
-        grid-template-rows: 300px;
+.profile-table-head {
+        background-color: rgb(43, 101, 129);
+        color: white;
+        padding: 12px;
+        text-align: center;
+        font-weight: 600;
+        border: 1px solid #fff;
+}
 
-        width:1270px;
-        /* height:699px; */
-        height:310px;
-        padding:10px 10px 0px 7px;
-        border-bottom:none;
-}
-.profile_image{
-        /* border:1px solid azure; */
-        margin: 0px 10px 10px 0px;
-        overflow: hidden;
-}
-#profileimg{
-        border:1px solid azure;
-        width:290px;
-        /* border-radius:6px; */
-}
-.profile_info_1{
-        border:1px solid azure;
-        border-bottom: none;
-        display: grid;
-        grid-template-columns: 640px 315px;
-        grid-template-rows: 40px 40px 40px 80px 100px;
-        /* align-content:space-between; */
-        /* align-items:flex-start; */
-}
-.profile_p {
-        border:1px solid azure;
+.medtdata {
         padding: 10px;
-        color:rgb(119, 169, 186);
-        font-weight: 400;
-}
-#box-1{
-        justify-self:left;
-}
-#box-3{
-        justify-self:left;
+        border: 1px solid #ccc;
+        text-align: center;
+        color:#fff;
 }
 
-
-
-.form-2{
-        border:1px solid azure;
-        display:grid;
-        grid-template-columns: 1255px;
-        grid-template-rows: 370px;
-        width:1270px;
-     
-        height:388px;
-        padding:0px 10px 0px 7px;
-        border-top:none;
-}
-.profile_info_3::-webkit-scrollbar{
-        display:none;
-}
-.profile_info_3{
-        border:1px solid azure;
-        border-top:none;
-        overflow-x:auto;
-        padding:20px;
-}
-
-.profile_table{
-        border:1px solid azure;
+.worker_Reading,
+.worker_Reading_select,
+#worker_TextArea,
+#workerTextArea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #aaa;
+        background-color: transparent;
         border:none;
-        
-       
-}
-tr{
-        border:1px solid azure;
-        
-}
-.profile-table-head, .profile-table-head{
-        border:1px solid azure;
-        padding:10px;
-}
-.profile-table-head{
-        color:rgb(119, 169, 186);
-}
-
-
-.profile-Search{
-        border:1px solid azure;
-        background: transparent;
-        width:150px;
-        height:30px;
-        outline: 0;
-        border-radius:5px;
-        margin-bottom: 10px;
-        padding-left: 5px;
-        font-size: 13px;
-        position:relative;
-        left:700px;
-}
-.space{
-        margin-left:10px;
-}
-.profile-Search:hover{
-        border:1px solid rgb(119, 169, 186);
-}
-.profile-Search-button{
-        color:azure;
-        width:150px;
-        height:20px;
-        background:transparent;
-        border:1px solid rgb(119, 169, 186);
-        border-radius:8px;
-        margin-bottom: 10px;
-}
-.profile-Search-button:hover{
-        background-color: rgb(119, 169, 186);
-        color:black;
-}
-
-.search-with-date{
-        border:1px solid azure;
-        width:200px;
-        height:31px;
-}
-
-
-
-
-
-.worker_Reading{
-        width:50px;
-        height:30px;
-        background-color: rgba(34, 38, 41, 0.128);
-        outline: 0;
-        border: none;
-        font-size: large;
+        outline: none;
+        color:#fff;
 }
 .worker_Reading_select{
-        width:130px;
-        height:30px;
-        background-color: rgba(34, 38, 41, 0.128);
-        outline: 0;
+        color:#fff;
+        background-color: rgb(43, 101, 129);;
+}
+
+.med-medicine {
+        min-height: 60px;
+}
+
+.new_entry_and_cancel {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+}
+
+.profile-newEntry-button {
+        background-color: #28a745;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
         border: none;
-        font-size: large;    
+        font-weight: 500;
+        cursor: pointer;
 }
-#worker_TextArea{
-        width:220px;
-        height: 60px;
-        background-color: rgba(34, 38, 41, 0.128);
-        outline: 0;
-        border: none;
-        resize: none;
-}
-#workerTextArea{
-        width:130px;
-        height: 50px;
-        background-color: rgba(34, 38, 41, 0.128);
-        outline: 0;
-        border: none;
-        resize: none;
-}
-option{
-        color: rgb(119, 169, 186);
+
+.profile-newEntry-button:hover {
+        background-color: #218838;
 }
 
 
 
 
-.profile-newEntry-button{
-        color:azure;
-        width:150px;
-        height:20px;
-        background:transparent;
-        border:1px solid rgb(119, 169, 186);
-        border-radius:8px;
-        margin-top: 10px;
-        /* position: relative;
-        left:500px; */
-}
-.profile-newEntry-button:hover{
-        background-color: rgb(119, 169, 186);
-        color:black;
+
+
+
+
+
+
+
+
+
+
+
+
+/* Spacing Between Medical Rows */
+.med_space {
+        height: 2rem;
 }
 
-.medthead{
-        width: 80px;
+/* Responsive Design */
+@media (max-width: 768px) {
+        .profileform {
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .profile_info_1 {
+                width: 100%;
+        }
+
+        .profile_image {
+                justify-content: center;
+        }
+
+        .profile-Search-button,
+        .profile-Search {
+                /* width: 100%; */
+                max-width: 300px;
+                /* font-weight: 200; */
+                font-size: 14px;
+                padding:8px 3px;
+        }
+
+        .new_entry_and_cancel {
+                /* flex-direction: column; */
+                align-items: stretch;
+        }
+
+
+
+        .tableScrollContainer {
+                overflow-x: auto;
+        }
+
+        .profile_table {
+                min-width: 1000px;
+        }
+
 }
-.medtdata{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .profile_table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+
+      
+}
+
+.profile-table-head {
+        background-color: #007bff;
+        color: white;
+        padding: 12px;
+        text-align: center;
+        font-weight: 600;
+}
+
+.medtdata {
+        padding: 10px;
+        border: 1px solid #ccc;
         text-align: center;
 }
-.med_space{
-        margin-bottom: 20px;
+
+.worker_Reading,
+.worker_Reading_select,
+#worker_TextArea,
+#workerTextArea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #aaa;
 }
-.data-2{
-        width:110px;
+
+.med-medicine {
+        min-height: 60px;
+}  */
+
+/* Submit & Cancel */
+/* .new_entry_and_cancel {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
 }
-.data-3{
-        width:300px;
+
+.profile-newEntry-button {
+        background-color: #28a745;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        font-weight: 500;
+        cursor: pointer;
 }
-.new_entry_and_cancel{
-        /* border:1px solid azure; */
-        width:310px;
-        height:15;
-        display:flex;
-        align-items: center;
-        margin-bottom:10px;
-        justify-content: space-between;
-}
+
+.profile-newEntry-button:hover {
+        background-color: #218838;
+}  */

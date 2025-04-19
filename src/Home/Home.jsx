@@ -4,6 +4,7 @@ import { Data } from './NavItems';
 import Nav from './Nav';
 import Menu from './Menu';
 
+
 const UserData = Data.map((curElem) => {
   return curElem;
 })

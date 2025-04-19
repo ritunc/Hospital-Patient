@@ -80,7 +80,7 @@ const NavCreate = ({ NavItem }) => {
 
                                                                 NavItem.map((curElem, index) => {
                                                                         return (
-                                                                                <a key={index}> <Link to={curElem.link}> {curElem.li} </Link> </a>
+                                                                                <a key={index}> <Link to={curElem.link} state={{ from: `/create` }}> {curElem.li} </Link> </a>
                                                                         )
                                                                 })
                                                         }
@@ -99,7 +99,7 @@ const NavCreate = ({ NavItem }) => {
                                                         {
                                                                 NavItem.map((curElem, index) => {
                                                                         return (
-                                                                                <a key={index}> <Link to={curElem.link}> {curElem.li} </Link> </a>
+                                                                                <a key={index}> <Link to={curElem.link} state={{ from: `/create` }}> {curElem.li} </Link> </a>
                                                                         )
                                                                 })
                                                         }

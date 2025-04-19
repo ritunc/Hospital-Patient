@@ -11,12 +11,10 @@
 
 body {
         font-family: 'Segoe UI', sans-serif;
-        /* background-color: #f9f9f9; */
-        /* color: #333; */
 }
 
 .section_Create {
-        width: 100%;
+        /* width: 100%; */
         padding: 2rem;
         display: flex;
         justify-content: center;
