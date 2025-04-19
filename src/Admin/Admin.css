@@ -1,247 +1,482 @@
 * {
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
-        color:azure;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-/* body{
-        background-color: rgb(19, 47, 61);
-} */
 
-/* Its not needed, body color is decleard at index.html page,body color
-need all the pages only in home.css */
-/* #Admin-body_color{ 
-        background-color: rgb(19, 47, 61);
-} */
+body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: black;
+}
 
-header{
-        /* width: auto; */
-        height:40px;
+.container {
+        /* border: 1px solid azure; */
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+}
+
+header {
         background-color: rgb(119, 169, 186);
-        /* background-color: rgb(119, 169, 186); */
-        padding-top: 10px;
+        color: white;
+        padding: 0.7rem 0;
+        /* z-index: 2; */
+}
 
+nav {
+        /* border: 1px solid azure; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* z-index: 3; */
 }
-.container{
-        margin-inline: 100px;
+
+.logo {
+        font-size: 1.5rem;
+        font-weight: bold;
 }
-.contain{
-        display:flex;
-        justify-content: space-evenly;
-        margin-inline: 200px;
-}
-li{
+
+.nav-links {
+        /* border: 1px solid azure; */
+        display: flex;
+        gap: 2rem;
         list-style: none;
-        font-size:1.3rem;
+        /* z-index: 4; */
 }
 
+.nav-links li {
+        /* border: 1px solid azure; */
+        display: flex;
+        justify-content: space-around;
+        width: 200px;
+        /* z-index: 5; */
+}
 
-.adminMain{
-        border:1px solid azure;
-        display:flex;
-        justify-content: space-evenly;
-        border-top: none;
-        width: auto;
-        height:590px;
-        padding-top: 30px;
+.nav-links a {
+        /* border: 1px solid azure; */
+        color: white;
+        text-decoration: none;
+        /* z-index: 6; */
 }
-.adminimgContainer{
-        border:1px solid azure;
-        width:600px;
-        height:400px;
-        text-align:left;
-        border-radius: 12px;
-        background-color: rgb(19, 47, 61);
+
+.nav-links .icon {
+        display: none;
 }
-.logIn{
-        border:1px solid azure;
-        width:500px;
-        height:400px;
-        background-color: rgb(19, 47, 61);
-        border-radius: 12px;
+
+.popUpMenu {
+        display: none;
 }
-.text{
-        position:relative;
-        top:100px;
-        left:50px;
-        font-size: 2.5rem;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.popDownMenue {
+        display: none;
 }
 
 
 
-#admin{
-        position:relative;
-        top:10px;
-        font-size: 2.5rem;
-        margin-bottom: 30px;
+
+/* Main Content */
+main {
+        /* border: 1px solid rgb(148, 20, 180); */
+        padding: 2rem 0;
+}
+
+
+
+.grid {
+        /* border: 1px solid rgb(13, 125, 9); */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+}
+
+.Texts {
+        color: rgb(242, 238, 238);
+        font-size: 2.7rem;
+}
+
+.card {
+        border: 2px solid azure;
+        z-index: 1;
+        /* border-image: linear-gradient(45deg, red, blue); */
+
+        /* padding: 0.1rem; */
+        background: #131219;
+        padding: 1.5rem;
+        border-radius: 15px;
+        /* box-shadow: 0 2px 5px rgba(234, 228, 228, 0.886); */
+}
+
+
+
+
+.card-rotate {
+        border: 5px solid transparent;
+
+        background: linear-gradient(#131219, #131219) padding-box, linear-gradient(var(--angle),
+                        rgb(16, 144, 144), #ce14ce) border-box;
+        animation: 3s rotate linear infinite;
+
+}
+
+@keyframes rotate {
+        to {
+                --angle: 360deg;
+        }
+}
+
+@property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+}
+
+/* @keyframes rot {
+        0% {
+                transform: rotate(0deg)
+        }
+
+        100% {
+                transform: rotate(360deg);
+        }
+} */
+
+.card-rotate h1 {
+        margin-top: 2.9rem;
+}
+
+.card-rotate h3 {
+        margin-bottom: 2.7rem;
+}
+
+
+
+/* Footer */
+footer {
+        background-color: #333;
+        color: white;
         text-align: center;
-}
-form{
-        /* border:1px solid azure; */
-        display:flex;
-        flex-direction: column;
-        width:auto;
-        height:350px;
+        padding: 1rem 0;
+        margin-top: auto;
 }
 
-.formContain{
-        border:1px solid azure;
-        width:400px;
-        height:36px;
-        
-        position: relative;
-        left:50px;
-        top:50px;
-        display:flex;
-        justify-content: space-between;
-        margin: 0px 0px 20px 0px;
-}
-label{
-        font-size:1.3rem;
-}
-.adminInput{
-        border:1px solid azure;
-        width:300px;
-        height:35px;
-        border-radius:7px;
-        background-color: rgba(48, 39, 39, 0.2);
-        font-size: 1.2rem;
-}
-#btn{
-        border:1px solid azure;
-        width:300px;
-        height:35px;
-        border-radius:7px;
-        background-color: rgb(119, 169, 186);
-        font-size: 1.3rem;
-        border:none;
-}
-.btnformContain{
-        border:1px solid azure;
-        width:400px;
-        height:36px;
-        position: relative;
-        left:50px;
-        top:50px;
-        display:flex;
-        justify-content: space-between;
-        margin: 30px 0px 0px 0px;
-        padding-left:60px;
-}
+/* Mobile Styles */
+@media (max-width: 768px) {
+        /* .nav-links {
+                display: none;
+        } */
 
-@media (width<= 1024px) {
-     .adminimgContainer{
-        width:500px;
-     }
-     .logIn{
-        width:450px;
-     }
-     .adminInput{
-        width:250px;
-    }
-    .formContain{
-        justify-content:space-evenly;
-        left:30px;
-}
-}
-@media (width<=920px){
-        .text{
-                font-size: 2.1rem;
-                left:23px;
-        }
-        .adminimgContainer{
-                width:400px;
+        /* .hero {
+                padding: 2rem 0;
+        } */
+
+        .grid {
+                grid-template-columns: 1fr;
         }
 }
 
-/*Tablet --- 1st*/
-@media (width<=768px) {
-        .formContain{
-                width:350px;
-                justify-content:space-between;
+@media (max-width: 480px) {
+        .container {
+                padding: 0 10px;
         }
-        .adminMain{
-                justify-content: space-between;
-                width:810px;
+
+        .Texts {
+                font-size: 2.2rem;
         }
-        header{
-                width:810px;
-        }
-        form{
-                height:300px;
-        }
-        .btnformContain{
-                left:10px;
-                top:30px;
-                width:390px;
-                padding-left: 50px;
-        }
-        .formContain{
-                left:30px;
-        }
-        .logIn{
-                width:410px;
-        }
+
+        /* .nav-links {
+                display: none;
+        } */
 }
-@media (width<=688px){
-        .adminMain{
+
+@media (max-width: 400px) {
+        .Texts {
+                font-size: 1.9rem;
+        }
+
+        .nav-links a {
+                display: none;
+        }
+
+        .nav-links .icon {
+                display: block;
+        }
+
+        .nav-links li {
+                width: 50px;
+        }
+
+        .popUpMenu {
+                display: block;
+                /* border: 2px solid transparent; */
+                position: absolute;
+                right: 10px;
+                top: -39px;
+                z-index: -1;
+                list-style: none;
+                background-color: rgb(19, 47, 61);
+                border-radius: 7px;
+        }
+
+        .popDownMenue {
+                display: block;
+                /* border: 2px solid transparent;   */
+                position: absolute;
+                right: 10px;
+                z-index: 2;
+                /* it is keep over from color gradient card */
+                list-style: none;
+                background-color: rgb(19, 47, 61);
+                border-radius: 7px;
+                animation: 0.2s popDown ease-out;
+
+        }
+
+        @keyframes popDown {
+                0% {
+                        /* z-index: -1; */
+                        opacity: 0;
+                        top: -30px;
+
+                }
+
+                25% {
+                        opacity: 0;
+                        /* top:-10px; */
+
+                }
+
+                50% {
+                        opacity: 0.1;
+                        /* top:40px; */
+                        /* z-index: 0 ; */
+                }
+
+                75% {
+                        opacity: 0.4;
+                }
+
+                100% {
+                        top: 62px;
+                        opacity: 1;
+                }
+        }
+
+        .popUpMenu li {
+                /* border: 1px solid azure; */
+                display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
-                height:890px;
                 align-items: center;
+                width: 100px;
         }
-        .logIn{
-                width:400px;
+
+        .popUpMenu a {
+                /* border: 1px solid azure; */
+                color: white;
+                text-decoration: none;
+                padding: 10px 0;
         }
-        .btnformContain{
-                width: 370px;
-                padding-left: 50px;
+
+        .popDownMenue li {
+                /* border: 1px solid azure; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100px;
+                border-radius: 8px;
         }
-        #btn{
-                width:280px;
+
+        .popDownMenue a {
+                /* border: 1px solid azure; */
+                color: white;
+                text-decoration: none;
+                padding: 10px 10px;
+                border-radius: 8px;
         }
+
+        .popDownMenue a:active {
+                background-color: rgb(9, 148, 9);
+        }
+
+
+
+        .card-rotate2 {
+                border: 2px solid transparent;
+                border-radius: 8px;
+
+                background: linear-gradient(#131219, #131219) padding-box, linear-gradient(var(--angle),
+                                rgb(16, 144, 144), #ce14ce) border-box;
+                animation: 3s rotate linear infinite;
+
+        }
+
+        @keyframes rotate {
+                to {
+                        --angle: 360deg;
+                }
+        }
+
+        @property --angle {
+                syntax: "<angle>";
+                initial-value: 0deg;
+                inherits: false;
+        }
+
+
+}
+
+@media (max-width: 205px) {
+        .container {
+                padding: 0 7px;
+        }
+
 }
 
 
-/*Mobile -- 1st*/
-@media (width <= 426px){
-        .adminMain{
-                height:960px;
-        }
-        
+
+
+/* Log In code*/
+
+.LogIn {
+        /* border: 1px solid rgb(171, 12, 168); */
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgb(19, 47, 61);
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
 }
-@media (width <= 379px){
-        .adminMain{
-                height:1080px;
+
+#admins {
+        color: azure;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+}
+
+.home-form {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+}
+
+.FormContains {
+        /* border: 1px solid black; */
+        margin-bottom: 15px;
+}
+
+.LABALS {
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: #ebe2e2;
+}
+
+.LogInputs {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: rgba(48, 39, 39, 0.2);
+        color: #ebe2e2;
+}
+
+.btnFormContain {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid black; */
+}
+
+#btns {
+        background-color: rgb(119, 169, 186);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+}
+
+#btns:hover {
+        background-color: #45a049;
+}
+
+#createAccount {
+        text-align: center;
+        margin-top: 20px;
+        /* border:1px solid azure; */
+}
+
+#createAccount a {
+        font-size: 14px;
+        color: #007BFF;
+        text-decoration: none;
+}
+
+#createAccount a:hover {
+        text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+        .LogIn {
+                width: 90%;
+                padding: 15px;
         }
 
-}
-@media (width <= 337px){
-        .adminMain{
-                height:1210px;
+        #admins {
+                font-size: 20px;
+        }
+
+        .LABALS {
+                font-size: 12px;
+        }
+
+        .LogInputs {
+                font-size: 14px;
+                padding: 8px;
+        }
+
+        #btns {
+                padding: 12px 25px;
+                font-size: 14px;
+        }
+
+        #createAccount a {
+                font-size: 13px;
         }
 }
-@media (width <= 321px){
-        .adminMain{
-                height:1270px;
+
+@media (max-width: 400px) {
+        .LogIn {
+                width: 95%;
+                padding: 10px;
         }
-}
-@media (width <= 285px){
-        .adminMain{
-                height:1440px;
+
+        #admins {
+                font-size: 18px;
         }
-        .adminimgContainer{
-                width:450px;
+
+        .LABALS {
+                font-size: 12px;
         }
-        .logIn{
-                width:450px;
+
+        .LogInputs {
+                font-size: 12px;
+                padding: 6px;
         }
-        .btnformContain{
-                left:40px;
+
+        #btns {
+                padding: 10px 20px;
+                font-size: 13px;
         }
-        .formContain{
-                left:40px;
+
+        #createAccount a {
+                font-size: 12px;
         }
 }
