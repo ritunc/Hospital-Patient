@@ -324,7 +324,7 @@ const Profile = () => {
 
 
 
-                                        
+
                                         <div className="profileform">
                                                 <div className="profile_image">
                                                         <img src={`https://hospital-backend-ibkd-one.vercel.app/uploads/images/${worker.name}`} id="profileimg" />
@@ -364,8 +364,8 @@ const Profile = () => {
 
 
                                                         {state ? (
-                                                                <>         
-                                                                        <div  className='tableScrollContainer'>
+                                                                <>
+                                                                        <div className='tableScrollContainer'>
                                                                                 <table style={{ borderCollapse: collapse }} className="profile_table">
                                                                                         <tr>
                                                                                                 <th className="profile-table-head medthead" rowSpan="2">Dates</th>
@@ -447,7 +447,7 @@ const Profile = () => {
                                                                                                         ></textarea>
                                                                                                 </td>
 
-                                                                                                <td className="medtdata" data-label="Advice">
+                                                                                                <td className="medtdata selectOptionColum" data-label="Advice">
                                                                                                         <select className="worker_Reading_select" onChange={selectOption}>
                                                                                                                 <option value="Paracetamol" selected="Paracetamol">Paracetamol</option>
                                                                                                                 <option value="Avil" selected="Avil">Avil</option>
@@ -459,6 +459,7 @@ const Profile = () => {
                                                                                                                 <option value="Lasilactone" selected="Lasilactone">Lasilactone</option>
                                                                                                                 <option value="Trenexamic" selected="Trenexamic">Trenexamic</option>
                                                                                                         </select>
+                                                                                                        {/* <input type="text" value={medreport.Paracetamol} name="Paracetamol" onChange={selectOption} className="worker_Reading profile-table-head" /> */}
                                                                                                 </td>
 
                                                                                                 <td className="medtdata" data-label="Remark">
@@ -494,7 +495,7 @@ const Profile = () => {
                                                                 worker ? medData.map((curElem, index) => {
                                                                         return (
                                                                                 <>
-                                                                                        <div  className='tableScrollContainer'>
+                                                                                        <div className='tableScrollContainer'>
                                                                                                 <table style={{ borderCollapse: collapse }} className="profile_table" key={index}>
                                                                                                         <tr>
                                                                                                                 <th className="profile-table-head medthead" rowSpan="2">Dates</th>

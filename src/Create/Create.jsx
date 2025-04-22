@@ -266,7 +266,7 @@ const Create = () => {
                                                 </div>
                                                 <div className='thirdrow'>
 
-                                                        <label className='Label'>Ression Info:</label>
+                                                        <label className='Label'>Ration Info:</label>
                                                         <input className="thirdrow_data-input" type="text" name="ression_info" value={worker.ression_info} onChange={handletextInput} />
                                                 </div>
 

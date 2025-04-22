@@ -185,6 +185,15 @@ hr {
         color:#fff;
 }
 
+
+/* .selectOptionColum{
+        display:flex;
+        flex-direction: column;
+
+} */
+
+
+
 .worker_Reading,
 .worker_Reading_select,
 #worker_TextArea,
@@ -194,13 +203,13 @@ hr {
         border-radius: 6px;
         border: 1px solid #aaa;
         background-color: transparent;
-        border:none;
-        outline: none;
+        /* border:none;
+        outline: none; */
         color:#fff;
 }
 .worker_Reading_select{
         color:#fff;
-        background-color: rgb(43, 101, 129);;
+        background-color: rgb(43, 101, 129);
 }
 
 .med-medicine {
